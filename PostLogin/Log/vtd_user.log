@@ -1,0 +1,83 @@
+2023-12-19 14:25:43,546 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-19 14:25:43,564 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-19 14:25:43,565 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-19 14:25:43,566 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-19 14:25:43,566 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-19 14:25:43,572 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-19 14:25:44,198 [9] INFO  - Step 'Start' : Step 'Start' started
+2023-12-19 14:25:44,242 [9] INFO  - Step 'Start' ended successfully
+2023-12-19 14:25:44,248 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2023-12-19 14:25:44,321 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-12-19 14:25:44,324 [9] INFO  - Step 'Concatenate Strings4' : Step 'Concatenate Strings4' started
+2023-12-19 14:25:44,331 [9] INFO  - Step 'Concatenate Strings4' : Input Parameter 'Prefix', Value: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,336 [9] INFO  - Step 'Concatenate Strings4' : Input Parameter 'Suffix', Value: ''
+2023-12-19 14:25:44,338 [9] INFO  - Step 'Concatenate Strings4' : Output Parameter 'Result', Value: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,342 [9] INFO  - Step 'Concatenate Strings4' ended successfully
+2023-12-19 14:25:44,344 [9] INFO  - Step 'HTTP Request5' : Step 'HTTP Request5' started
+2023-12-19 14:25:44,373 [9] INFO  - Step 'HTTP Request5' : Fetching HTTP Url: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,577 [9] INFO  - Step 'HTTP Request5' : Server returned status code: 200
+2023-12-19 14:25:44,579 [9] INFO  - Step 'HTTP Request5' : HTTP Raw request:
+2023-12-19 14:25:44,581 [9] INFO  - Step 'HTTP Request5' : POST http://localhost:3434/cars-app/api/login 1.1
+Content-Type: application/json
+Host: localhost:3434
+Content-Length: 52
+Connection: Keep-Alive
+{
+  "username": "edson22",
+  "password": "1234"
+}
+
+2023-12-19 14:25:44,583 [9] INFO  - Step 'HTTP Request5' : HTTP Raw response:
+2023-12-19 14:25:44,584 [9] INFO  - Step 'HTTP Request5' : HTTP/1.1 200 OK
+Pragma: no-cache
+Content-Length: 1153
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 19 Dec 2023 17:25:44 GMT
+Server: Apache-Coyote/1.1
+{"firstname":"Edson","lastname":"Neto","username":"edson22","token_type":"Bearer","access_token":"eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTUDBcL2JRQlJcL1RvTkNoTVNmU2tYcVFCZGdxeHdwakprS1NpdFZWcWhJczRCRWRiRWY1dUI4NTk2ZElWbXFUTzNBQUNvZ1ZlcFg0SnZRcFI4QXdjREszTFh2VE1DQkJYR1RcL2U3bjM3XC9uc3hzWU14cVdZczI0TUg0cXNwaEwzNlNheTloZ21HbHUrMzVtVUVkb2M4U0hITmloQ2R3ZXJ3UmVBQ1VlV1hnWjdMQTlWaE5NeHJYVjdnNkd0dEhUVUZjNkhqSnVhWmJndnRLN1wvajEzcURRK0VDaW92YU1TVk5aaGhvV2h5cVJ0S2Ruc3BWeGp0QTdUeFN4UTRhNGJ2UXJwQnFYbFRKaFJhQVVsNndxTUFwaGdtZDFXcE1yUldKaTZOWnRaTG1wdHRJMEF4bE5tRExsN2xLUnRuWFYzNzJ4S1N2QVZ2a0c1bDNwMHFMdEZCXC9VZGo3K2loS0RVWEVtejBKR0ppdmdXZCtMRVA1ajcrZmZ3OTZCVEFxQk8zajc5VFRGXC92UXlEODgxXC9iXC9LaXZkREM3SWoxQXRib3BlUm1wbUQrck5FcFhcL3o2ZEh4NjgyUGpCU2s3eFB2bjcyUGgzYkM1XC9vcEtVcWFaVlNNN0l0cjlzbnNtOHVXbnllKzIwUGZiUEVrRjBoOGxMVWIzRWdVeHhTMXJKZTc2dGxCZFd3MmFYenJ0NXBwN3EyQmtsS3pYU1hZeVQrM1c1UWVLbG5Wd2ZmVG5jUDZTS0Q3QzJCNFRHVkxwMHdXb2xTVmQxTlwvUFR1Y21UcTRPOGdqRDM3bjZIOWxRTEFFU0F3QUEiLCJzdWIiOiJlZHNvbjIyIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MTcwMzAxMDM0NCwiaWF0IjoxNzAzMDA2NzQ0fQ.fxnHiznfAXJvTYFZvL7U_hSR5q9-disCpTunOPtn_LI","roles":["ROLE_USER"]}
+2023-12-19 14:25:44,595 [9] INFO  - Checkpoint 0: "200" = "200" passed
+2023-12-19 14:25:44,603 [9] INFO  - Step 'HTTP Request5' ended successfully
+2023-12-19 14:25:44,605 [9] INFO  - Step 'Set OS Environment Variable6' : Step 'Set OS Environment Variable6' started
+2023-12-19 14:25:44,610 [9] INFO  - Step 'Set OS Environment Variable6' : Input Parameter 'Variable name', Value: 'login'
+2023-12-19 14:25:44,612 [9] INFO  - Step 'Set OS Environment Variable6' : Input Parameter 'Variable value', Value: 'eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTUDBcL2JRQlJcL1RvTkNoTVNmU2tYcVFCZGdxeHdwakprS1NpdFZWcWhJczRCRWRiRWY1dUI4NTk2ZElWbXFUTzNBQUNvZ1ZlcFg0SnZRcFI4QXdjREszTFh2VE1DQkJYR1RcL2U3bjM3XC9uc3hzWU14cVdZczI0TUg0cXNwaEwzNlNheTloZ21HbHUrMzVtVUVkb2M4U0hITmloQ2R3ZXJ3UmVBQ1VlV1hnWjdMQTlWaE5NeHJYVjdnNkd0dEhUVUZjNkhqSnVhWmJndnRLN1wvajEzcURRK0VDaW92YU1TVk5aaGhvV2h5cVJ0S2Ruc3BWeGp0QTdUeFN4UTRhNGJ2UXJwQnFYbFRKaFJhQVVsNndxTUFwaGdtZDFXcE1yUldKaTZOWnRaTG1wdHRJMEF4bE5tRExsN2xLUnRuWFYzNzJ4S1N2QVZ2a0c1bDNwMHFMdEZCXC9VZGo3K2loS0RVWEVtejBKR0ppdmdXZCtMRVA1ajcrZmZ3OTZCVEFxQk8zajc5VFRGXC92UXlEODgxXC9iXC9LaXZkREM3SWoxQXRib3BlUm1wbUQrck5FcFhcL3o2ZEh4NjgyUGpCU2s3eFB2bjcyUGgzYkM1XC9vcEtVcWFaVlNNN0l0cjlzbnNtOHVXbnllKzIwUGZiUEVrRjBoOGxMVWIzRWdVeHhTMXJKZTc2dGxCZFd3MmFYenJ0NXBwN3EyQmtsS3pYU1hZeVQrM1c1UWVLbG5Wd2ZmVG5jUDZTS0Q3QzJCNFRHVkxwMHdXb2xTVmQxTlwvUFR1Y21UcTRPOGdqRDM3bjZIOWxRTEFFU0F3QUEiLCJzdWIiOiJlZHNvbjIyIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MTcwMzAxMDM0NCwiaWF0IjoxNzAzMDA2NzQ0fQ.fxnHiznfAXJvTYFZvL7U_hSR5q9-disCpTunOPtn_LI'
+2023-12-19 14:25:44,615 [9] INFO  - Step 'Set OS Environment Variable6' ended successfully
+2023-12-19 14:25:44,618 [9] INFO  - Step 'Iteration 1' ended successfully
+2023-12-19 14:25:44,625 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2023-12-19 14:25:44,628 [9] INFO  - Step 'Concatenate Strings4' : Step 'Concatenate Strings4' started
+2023-12-19 14:25:44,631 [9] INFO  - Step 'Concatenate Strings4' : Input Parameter 'Prefix', Value: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,648 [9] INFO  - Step 'Concatenate Strings4' : Input Parameter 'Suffix', Value: ''
+2023-12-19 14:25:44,649 [9] INFO  - Step 'Concatenate Strings4' : Output Parameter 'Result', Value: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,652 [9] INFO  - Step 'Concatenate Strings4' ended successfully
+2023-12-19 14:25:44,653 [9] INFO  - Step 'HTTP Request5' : Step 'HTTP Request5' started
+2023-12-19 14:25:44,656 [9] INFO  - Step 'HTTP Request5' : Fetching HTTP Url: 'http://localhost:3434/cars-app/api/login'
+2023-12-19 14:25:44,768 [9] INFO  - Step 'HTTP Request5' : Server returned status code: 200
+2023-12-19 14:25:44,770 [9] INFO  - Step 'HTTP Request5' : HTTP Raw request:
+2023-12-19 14:25:44,772 [9] INFO  - Step 'HTTP Request5' : POST http://localhost:3434/cars-app/api/login 1.1
+Content-Type: application/json
+Host: localhost:3434
+Content-Length: 52
+{
+  "username": "edson23",
+  "password": "1234"
+}
+
+2023-12-19 14:25:44,773 [9] INFO  - Step 'HTTP Request5' : HTTP Raw response:
+2023-12-19 14:25:44,775 [9] INFO  - Step 'HTTP Request5' : HTTP/1.1 200 OK
+Pragma: no-cache
+Content-Length: 1155
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 19 Dec 2023 17:25:44 GMT
+Server: Apache-Coyote/1.1
+{"firstname":"Edson","lastname":"Neto","username":"edson23","token_type":"Bearer","access_token":"eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTUDBcL2JRQlJcL1RvTkNRU3BRQ2FRT3NCUzJ5cEZnekZSUWlvU3NnRWl6Z0ZSMHNSXC91d2ZuTzNKMGhXVkFtR0RLQVNwRXE4Ulg0Sm5UcEI2amFvU3N6YTkrWmdOTXVpSnZzZHpcL1wvXC9qMWYzOEtJMGJBVWE4YUY4Vk9SeFZ6Nkp0VmN4Z2JEVEhQYjlUT0RPa0tiSTFaellJc21jSCs4RW5nQmxIaGs0WFd3eHc1WlZUQVpWOWZiZXhqYVdrZkRvdEx4Z0hGWHN3U1BsTjczSDdsRHBmRWZnWUxhT3k5QlpRdW1XQmlxVE5xR2t2Vk95alZHV3pCWnpBSVY3cnZSZEVnM0tDMW53Z3hES3loWlcyQVV3RGpMN0dkRnFoeU5oWWw3czVubG90cEVXd3RnTkdYR2tMdlwva2pTdHMrN3VuVTFKQ1E3Z0dNcWQxS05EM1MwNHFPOTRcL0JVbEJLWG1TcHI1bGt4VXhIZTVFeWYrM3V5WEgyZFh2VllKZ0RwNTlcL1EzeGZ6Tk12UnVQdDNONVVWN29ZV1pJZXNGck5aSnljMVV3ZnhSbzFQKytXM2o0dkwyZFBzRktUdkVoK2Z2WVwvNzlvTG51aWtwU3BwbFZRenNpMnFPeWV5Ynk1YWZKSDdiUTlaczhTUVhTSHlVdFJvOFNCVEhGTFdzbEh2cTI4SEp6UGFqdnRKcjFUZmRXd2Nnb3ViaEVzcVwveTFHNWRmcUJvV2YwXC81OVwvUDN2NGlpalVZT1dRaVF5cDlzZ0Exc3FTTit1VDZjbmI4Nis5K0htSHdPNFwvOUJUSjIzTk1TQXdBQSIsInN1YiI6ImVkc29uMjMiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNzAzMDEwMzQ0LCJpYXQiOjE3MDMwMDY3NDR9.xulDJ4SseGa2Z27X_KvzAGeqBbF_n6rLrteMMgOxy6Q","roles":["ROLE_USER"]}
+2023-12-19 14:25:44,777 [9] INFO  - Checkpoint 0: "200" = "200" passed
+2023-12-19 14:25:44,780 [9] INFO  - Step 'HTTP Request5' ended successfully
+2023-12-19 14:25:44,781 [9] INFO  - Step 'Set OS Environment Variable6' : Step 'Set OS Environment Variable6' started
+2023-12-19 14:25:44,784 [9] INFO  - Step 'Set OS Environment Variable6' : Input Parameter 'Variable name', Value: 'login'
+2023-12-19 14:25:44,785 [9] INFO  - Step 'Set OS Environment Variable6' : Input Parameter 'Variable value', Value: 'eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTUDBcL2JRQlJcL1RvTkNRU3BRQ2FRT3NCUzJ5cEZnekZSUWlvU3NnRWl6Z0ZSMHNSXC91d2ZuTzNKMGhXVkFtR0RLQVNwRXE4Ulg0Sm5UcEI2amFvU3N6YTkrWmdOTXVpSnZzZHpcL1wvXC9qMWYzOEtJMGJBVWE4YUY4Vk9SeFZ6Nkp0VmN4Z2JEVEhQYjlUT0RPa0tiSTFaellJc21jSCs4RW5nQmxIaGs0WFd3eHc1WlZUQVpWOWZiZXhqYVdrZkRvdEx4Z0hGWHN3U1BsTjczSDdsRHBmRWZnWUxhT3k5QlpRdW1XQmlxVE5xR2t2Vk95alZHV3pCWnpBSVY3cnZSZEVnM0tDMW53Z3hES3loWlcyQVV3RGpMN0dkRnFoeU5oWWw3czVubG90cEVXd3RnTkdYR2tMdlwva2pTdHMrN3VuVTFKQ1E3Z0dNcWQxS05EM1MwNHFPOTRcL0JVbEJLWG1TcHI1bGt4VXhIZTVFeWYrM3V5WEgyZFh2VllKZ0RwNTlcL1EzeGZ6Tk12UnVQdDNONVVWN29ZV1pJZXNGck5aSnljMVV3ZnhSbzFQKytXM2o0dkwyZFBzRktUdkVoK2Z2WVwvNzlvTG51aWtwU3BwbFZRenNpMnFPeWV5Ynk1YWZKSDdiUTlaczhTUVhTSHlVdFJvOFNCVEhGTFdzbEh2cTI4SEp6UGFqdnRKcjFUZmRXd2Nnb3ViaEVzcVwveTFHNWRmcUJvV2YwXC81OVwvUDN2NGlpalVZT1dRaVF5cDlzZ0Exc3FTTit1VDZjbmI4Nis5K0htSHdPNFwvOUJUSjIzTk1TQXdBQSIsInN1YiI6ImVkc29uMjMiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiZXhwIjoxNzAzMDEwMzQ0LCJpYXQiOjE3MDMwMDY3NDR9.xulDJ4SseGa2Z27X_KvzAGeqBbF_n6rLrteMMgOxy6Q'
+2023-12-19 14:25:44,788 [9] INFO  - Step 'Set OS Environment Variable6' ended successfully
+2023-12-19 14:25:44,790 [9] INFO  - Step 'Iteration 2' ended successfully
+2023-12-19 14:25:44,792 [9] INFO  - Step 'Test Flow' ended successfully
+2023-12-19 14:25:45,031 [9] INFO  - Step 'End' : Step 'End' started
+2023-12-19 14:25:45,055 [9] INFO  - Step 'End' ended successfully

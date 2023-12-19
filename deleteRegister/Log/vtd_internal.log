@@ -1,0 +1,30 @@
+2023-12-18 11:50:52,380 [9] ERROR - Error Parsing JSON Response: Unexpected character encountered while parsing value. Line , position 0. Failed to parse the string '<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Error</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/cars-app/assets/application-59f627206fd31fd372a2f452a46a7d75.css"/>
+        <script type="text/javascript" src="/cars-app/assets/application-ae8997d9f5e3d047f820118acf8284c6.js" ></script>
+
+        
+        
+        <meta name="layout" content="main">
+        
+    
+    </head>
+    <body>
+        <div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="/cars-app/assets/grails_logo.png" alt="Grails"/></a></div>
+        
+        
+            <ul class="errors">
+                <li>An error has occurred</li>
+            </ul>
+        
+    
+        <div class="footer" role="contentinfo"></div>
+        <div id="spinner" class="spinner" style="display:none;">Loading&hellip;</div>
+    </body>
+</html>
+'. Make sure the string is in valid JSON format.

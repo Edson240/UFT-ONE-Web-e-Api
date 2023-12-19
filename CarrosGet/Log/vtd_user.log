@@ -1,0 +1,1315 @@
+2023-12-19 14:06:23,606 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-19 14:06:23,628 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-19 14:06:23,629 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-19 14:06:23,629 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-19 14:06:23,630 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-19 14:06:23,635 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-19 14:06:24,431 [9] INFO  - Step 'Start' : Step 'Start' started
+2023-12-19 14:06:24,495 [9] INFO  - Step 'Start' ended successfully
+2023-12-19 14:06:24,500 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2023-12-19 14:06:24,506 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-12-19 14:06:24,508 [9] INFO  - Step 'Concatenate Strings6' : Step 'Concatenate Strings6' started
+2023-12-19 14:06:24,524 [9] INFO  - Step 'Concatenate Strings6' : Input Parameter 'Prefix', Value: 'http://localhost:3434/cars-app/carShop/cars'
+2023-12-19 14:06:24,528 [9] INFO  - Step 'Concatenate Strings6' : Input Parameter 'Suffix', Value: ''
+2023-12-19 14:06:24,530 [9] INFO  - Step 'Concatenate Strings6' : Output Parameter 'Result', Value: 'http://localhost:3434/cars-app/carShop/cars'
+2023-12-19 14:06:24,533 [9] INFO  - Step 'Concatenate Strings6' ended successfully
+2023-12-19 14:06:24,535 [9] INFO  - Step 'HTTP Request4' : Step 'HTTP Request4' started
+2023-12-19 14:06:24,554 [9] INFO  - Step 'HTTP Request4' : Fetching HTTP Url: 'http://localhost:3434/cars-app/carShop/cars'
+2023-12-19 14:06:25,266 [9] INFO  - Step 'HTTP Request4' : Server returned status code: 200
+2023-12-19 14:06:25,272 [9] INFO  - Step 'HTTP Request4' : HTTP Raw request:
+2023-12-19 14:06:25,274 [9] INFO  - Step 'HTTP Request4' : GET http://localhost:3434/cars-app/carShop/cars 1.1
+Content-Type: application/json
+Host: localhost:3434
+Connection: Keep-Alive
+
+2023-12-19 14:06:25,277 [9] INFO  - Step 'HTTP Request4' : HTTP Raw response:
+2023-12-19 14:06:25,283 [9] INFO  - Step 'HTTP Request4' : HTTP/1.1 200 OK
+X-Application-Context: application:production:3434
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 19 Dec 2023 17:06:25 GMT
+Server: Apache-Coyote/1.1
+[{"class":"com.ca.lisa.demo.CarInventory","id":1,"carTrim":"Premium Plus","color":"Silver","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":2,"address":"3800 Motor City Dr","city":"Denver","name":"Mountain Motors Inc","state":"CO","telephone":"303-222-8766","website":"www.mmdenver.com","zip":"80202"},"engine":"2.7 V6","image1":"inventory1.jpg","image2":"cars/interior1.jpg","makeid":2,"milage":138560,"model":{"class":"com.ca.lisa.demo.CarModel","id":10,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":2,"name":"Audi"},"modelYear":1996,"name":"A4-B","subName":"Base","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2011,"modelid":10,"options":"Leather, Navigation, Rear Air","owners":6,"price":3995.0,"stockNumber":"NAD8989","transmission":"Auto","vin":"2T1KR32E37C639014"},{"class":"com.ca.lisa.demo.CarInventory","id":2,"carTrim":"Technology","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":2,"address":"3800 Motor City Dr","city":"Denver","name":"Mountain Motors Inc","state":"CO","telephone":"303-222-8766","website":"www.mmdenver.com","zip":"80202"},"engine":"3.2 V6","image1":"inventory2.jpg","image2":"cars/interior2.jpg","makeid":1,"milage":30650,"model":{"class":"com.ca.lisa.demo.CarModel","id":2,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":1,"name":"Acura"},"modelYear":2013,"name":"RLX-AWD","subName":"AWD","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2013,"modelid":2,"options":"Leather, Navigation, Ski/BikeRack","owners":2,"price":30995.0,"stockNumber":"RA2356/1","transmission":"Auto","vin":"1ZVBP8AM1D5256900"},{"class":"com.ca.lisa.demo.CarInventory","id":3,"carTrim":"Premium","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":4,"address":"1673 Blake Rd","city":"Aurora","name":"Aurora Acura","state":"CO","telephone":"303-955-0134","website":"www.aurora_acura.com","zip":"80203"},"engine":"3.5 V6","image1":"inventory3.jpg","image2":"cars/interior3.jpg","makeid":1,"milage":54650,"model":{"class":"com.ca.lisa.demo.CarModel","id":2,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":1,"name":"Acura"},"modelYear":2013,"name":"RLX-AWD","subName":"AWD","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2012,"modelid":2,"options":"Leather, Navigation, Backup Camera","owners":2,"price":30995.0,"stockNumber":"BN12560","transmission":"Auto","vin":"3N1CB51D35l458771"},{"class":"com.ca.lisa.demo.CarInventory","id":4,"carTrim":"Sport","color":"Silver","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":4,"address":"1673 Blake Rd","city":"Aurora","name":"Aurora Acura","state":"CO","telephone":"303-955-0134","website":"www.aurora_acura.com","zip":"80203"},"engine":"3.5 V6","image1":"inventory4.jpg","image2":"cars/interior4.jpg","makeid":1,"milage":78400,"model":{"class":"com.ca.lisa.demo.CarModel","id":2,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":1,"name":"Acura"},"modelYear":2013,"name":"RLX-AWD","subName":"AWD","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2010,"modelid":2,"options":"Ski Rack, Tow kit","owners":4,"price":21405.0,"stockNumber":"BN13456","transmission":"Auto","vin":"2T1KR32E37C639012"},{"class":"com.ca.lisa.demo.CarInventory","id":5,"carTrim":"Sport","color":"Red","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":4,"address":"1673 Blake Rd","city":"Aurora","name":"Aurora Acura","state":"CO","telephone":"303-955-0134","website":"www.aurora_acura.com","zip":"80203"},"engine":"1.8T","image1":"inventory5.jpg","image2":"cars/interior5.jpg","makeid":2,"milage":98145,"model":{"class":"com.ca.lisa.demo.CarModel","id":11,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":2,"name":"Audi"},"modelYear":1996,"name":"S4-S","subName":"Sport","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2008,"modelid":11,"options":"Leather, Dual Air, 6 Speed","owners":4,"price":7800.0,"stockNumber":"BN13467","transmission":"Manual","vin":"3N1CB51D35l458773"},{"class":"com.ca.lisa.demo.CarInventory","id":6,"carTrim":"xDrivePlus","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":5,"address":"126 Rte 76","city":"Fort Collins","name":"Hilton Honda","state":"CO","telephone":"303-123-6789","website":"www.hiltonhonda.com","zip":"80503"},"engine":"3.5L","image1":"inventory6.jpg","image2":"cars/interior6.jpg","makeid":3,"milage":75350,"model":{"class":"com.ca.lisa.demo.CarModel","id":27,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":3,"name":"BMW"},"modelYear":1990,"name":"7-Series-P","subName":"Premium","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2010,"modelid":27,"options":"Leather, Navigation, Rear Air","owners":1,"price":34500.0,"stockNumber":"N2367J6","transmission":"Auto","vin":"3N1CB51D35l458774"},{"class":"com.ca.lisa.demo.CarInventory","id":7,"carTrim":"Base","color":"Blue","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":6,"address":"570 Lane St","city":"Englewood","name":"Terrys VW","state":"CO","telephone":"303- 560-3412","website":"www.terry_vag.com","zip":"80205"},"engine":"2.0T","image1":"inventory7.jpg","image2":"cars/interior7.jpg","makeid":2,"milage":104300,"model":{"class":"com.ca.lisa.demo.CarModel","id":10,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":2,"name":"Audi"},"modelYear":1996,"name":"A4-B","subName":"Base","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2008,"modelid":10,"options":"Premium Audio Upgrade","owners":1,"price":10750.0,"stockNumber":"ASN29001","transmission":"Auto","vin":"2T1KR32E37C639015"},{"class":"com.ca.lisa.demo.CarInventory","id":8,"carTrim":"Premium","color":"Silver","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":6,"address":"570 Lane St","city":"Englewood","name":"Terrys VW","state":"CO","telephone":"303- 560-3412","website":"www.terry_vag.com","zip":"80205"},"engine":"2.0T","image1":"inventory8.jpg","image2":"cars/interior8.jpg","makeid":2,"milage":62000,"model":{"class":"com.ca.lisa.demo.CarModel","id":10,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":2,"name":"Audi"},"modelYear":1996,"name":"A4-B","subName":"Base","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2012,"modelid":10,"options":"Leather, Navigation, Bluetooth","owners":3,"price":20400.0,"stockNumber":"ASN34501","transmission":"Auto","vin":"1ZVBP8AM1D5256906"},{"class":"com.ca.lisa.demo.CarInventory","id":9,"carTrim":"Base","color":"Silver","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":6,"address":"570 Lane St","city":"Englewood","name":"Terrys VW","state":"CO","telephone":"303- 560-3412","website":"www.terry_vag.com","zip":"80205"},"engine":"3.0L","image1":"inventory9.jpg","image2":"cars/interior9.jpg","makeid":3,"milage":58900,"model":{"class":"com.ca.lisa.demo.CarModel","id":27,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":3,"name":"BMW"},"modelYear":1990,"name":"7-Series-P","subName":"Premium","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2009,"modelid":27,"options":"Leather, Navigation, Rear Air","owners":2,"price":32295.0,"stockNumber":"ASN90845","transmission":"Auto","vin":"1ZVBP8AM1D5256907"},{"class":"com.ca.lisa.demo.CarInventory","id":10,"carTrim":"Technology Plus","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":5,"address":"126 Rte 76","city":"Fort Collins","name":"Hilton Honda","state":"CO","telephone":"303-123-6789","website":"www.hiltonhonda.com","zip":"80503"},"engine":"3.5 V6","image1":"inventory10.jpg","image2":"cars/interior10.jpg","makeid":1,"milage":54650,"model":{"class":"com.ca.lisa.demo.CarModel","id":1,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":1,"name":"Acura"},"modelYear":2013,"name":"RLX-B","subName":"Base","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2012,"modelid":1,"options":"Leather, Navigation, Backup Camera","owners":2,"price":30995.0,"stockNumber":"245980A","transmission":"Auto","vin":"3N1CB51D35l458778"},{"class":"com.ca.lisa.demo.CarInventory","id":11,"carTrim":"Technology Plus","color":"Green","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":5,"address":"126 Rte 76","city":"Fort Collins","name":"Hilton Honda","state":"CO","telephone":"303-123-6789","website":"www.hiltonhonda.com","zip":"80503"},"engine":"3.5 V8","image1":"inventory11.jpg","image2":"cars/interior11.jpg","makeid":1,"milage":74850,"model":{"class":"com.ca.lisa.demo.CarModel","id":1,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":1,"name":"Acura"},"modelYear":2013,"name":"RLX-B","subName":"Base","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2011,"modelid":1,"options":"Leather, Navigation","owners":1,"price":20995.0,"stockNumber":"245180A","transmission":"Auto","vin":"3N1CB41D32l458778"},{"class":"com.ca.lisa.demo.CarInventory","id":12,"carTrim":"Luxury","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":5,"address":"126 Rte 76","city":"Fort Collins","name":"Hilton Honda","state":"CO","telephone":"303-123-6789","website":"www.hiltonhonda.com","zip":"80503"},"engine":"3.0 V6","image1":"inventory22.jpg","image2":"cars/interior21.jpg","makeid":2,"milage":24650,"model":{"class":"com.ca.lisa.demo.CarModel","id":12,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":2,"name":"Audi"},"modelYear":1996,"name":"A4-C","subName":"Convertible","type":{"class":"com.ca.lisa.demo.CarType","id":1,"name":"Convertible"}},"modelYear":2012,"modelid":12,"options":"Leather","owners":2,"price":11995.0,"stockNumber":"246987A","transmission":"Auto","vin":"3H1CB51D35l453773"},{"class":"com.ca.lisa.demo.CarInventory","id":13,"carTrim":"Base","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":6,"address":"570 Lane St","city":"Englewood","name":"Terrys VW","state":"CO","telephone":"303- 560-3412","website":"www.terry_vag.com","zip":"80205"},"engine":"3.0L","image1":"inventory23.jpg","image2":"cars/interior23.jpg","makeid":3,"milage":58900,"model":{"class":"com.ca.lisa.demo.CarModel","id":23,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":3,"name":"BMW"},"modelYear":1990,"name":"3-Series-S","subName":"Sedan","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2011,"modelid":23,"options":"Leather, Navigation","owners":2,"price":12295.0,"stockNumber":"ASN90856","transmission":"Auto","vin":"1XCBP8AM1D5256909"},{"class":"com.ca.lisa.demo.CarInventory","id":14,"carTrim":"Base","color":"Black","dealer":{"class":"com.ca.lisa.demo.CarDealer","id":6,"address":"570 Lane St","city":"Englewood","name":"Terrys VW","state":"CO","telephone":"303- 560-3412","website":"www.terry_vag.com","zip":"80205"},"engine":"3.5L","image1":"inventory24.jpg","image2":"cars/interior24.jpg","makeid":3,"milage":68900,"model":{"class":"com.ca.lisa.demo.CarModel","id":26,"fuelType":"Gas","make":{"class":"com.ca.lisa.demo.CarMake","id":3,"name":"BMW"},"modelYear":1990,"name":"5-Series-S","subName":"Sedan","type":{"class":"com.ca.lisa.demo.CarType","id":7,"name":"Sedan"}},"modelYear":2009,"modelid":26,"options":"Leather, Navigation","owners":1,"price":35295.0,"stockNumber":"ASN70851","transmission":"Auto","vin":"7XCBP8AM1D5256910"}]
+2023-12-19 14:06:25,331 [9] INFO  - Checkpoint 0: "200" = "200" passed
+2023-12-19 14:06:25,335 [9] INFO  - Checkpoint 1: "14" = "14" passed
+2023-12-19 14:06:25,357 [9] INFO  - Checkpoint 4: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:25,364 [9] INFO  - Checkpoint 5: "1" = "1" passed
+2023-12-19 14:06:25,367 [9] INFO  - Checkpoint 6: "Premium Plus" = "Premium Plus" passed
+2023-12-19 14:06:25,371 [9] INFO  - Checkpoint 7: "Silver" = "Silver" passed
+2023-12-19 14:06:25,404 [9] INFO  - Checkpoint 8: "2.7 V6" = "2.7 V6" passed
+2023-12-19 14:06:25,409 [9] INFO  - Checkpoint 9: "inventory1.jpg" = "inventory1.jpg" passed
+2023-12-19 14:06:25,414 [9] INFO  - Checkpoint 10: "cars/interior1.jpg" = "cars/interior1.jpg" passed
+2023-12-19 14:06:25,418 [9] INFO  - Checkpoint 11: "2" = "2" passed
+2023-12-19 14:06:25,423 [9] INFO  - Checkpoint 12: "138560" = "138560" passed
+2023-12-19 14:06:25,426 [9] INFO  - Checkpoint 13: "2011" = "2011" passed
+2023-12-19 14:06:25,430 [9] INFO  - Checkpoint 14: "10" = "10" passed
+2023-12-19 14:06:25,434 [9] INFO  - Checkpoint 15: "Leather, Navigation, Rear Air" = "Leather, Navigation, Rear Air" passed
+2023-12-19 14:06:25,439 [9] INFO  - Checkpoint 16: "6" = "6" passed
+2023-12-19 14:06:25,443 [9] INFO  - Checkpoint 17: "3995" = "3995" passed
+2023-12-19 14:06:25,448 [9] INFO  - Checkpoint 18: "NAD8989" = "NAD8989" passed
+2023-12-19 14:06:25,451 [9] INFO  - Checkpoint 19: "Auto" = "Auto" passed
+2023-12-19 14:06:25,455 [9] INFO  - Checkpoint 20: "2T1KR32E37C639014" = "2T1KR32E37C639014" passed
+2023-12-19 14:06:25,461 [9] INFO  - Checkpoint 21: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:25,464 [9] INFO  - Checkpoint 22: "2" = "2" passed
+2023-12-19 14:06:25,466 [9] INFO  - Checkpoint 23: "3800 Motor City Dr" = "3800 Motor City Dr" passed
+2023-12-19 14:06:25,470 [9] INFO  - Checkpoint 24: "Denver" = "Denver" passed
+2023-12-19 14:06:25,473 [9] INFO  - Checkpoint 25: "Mountain Motors Inc" = "Mountain Motors Inc" passed
+2023-12-19 14:06:25,477 [9] INFO  - Checkpoint 26: "CO" = "CO" passed
+2023-12-19 14:06:25,480 [9] INFO  - Checkpoint 27: "303-222-8766" = "303-222-8766" passed
+2023-12-19 14:06:25,483 [9] INFO  - Checkpoint 28: "www.mmdenver.com" = "www.mmdenver.com" passed
+2023-12-19 14:06:25,487 [9] INFO  - Checkpoint 29: "80202" = "80202" passed
+2023-12-19 14:06:25,490 [9] INFO  - Checkpoint 30: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:25,494 [9] INFO  - Checkpoint 31: "10" = "10" passed
+2023-12-19 14:06:25,498 [9] INFO  - Checkpoint 32: "Gas" = "Gas" passed
+2023-12-19 14:06:25,501 [9] INFO  - Checkpoint 33: "1996" = "1996" passed
+2023-12-19 14:06:25,505 [9] INFO  - Checkpoint 34: "A4-B" = "A4-B" passed
+2023-12-19 14:06:25,508 [9] INFO  - Checkpoint 35: "Base" = "Base" passed
+2023-12-19 14:06:25,511 [9] INFO  - Checkpoint 36: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:25,513 [9] INFO  - Checkpoint 37: "2" = "2" passed
+2023-12-19 14:06:25,516 [9] INFO  - Checkpoint 38: "Audi" = "Audi" passed
+2023-12-19 14:06:25,518 [9] INFO  - Checkpoint 39: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:25,520 [9] INFO  - Checkpoint 40: "7" = "7" passed
+2023-12-19 14:06:25,523 [9] INFO  - Checkpoint 41: "Sedan" = "Sedan" passed
+2023-12-19 14:06:25,528 [9] INFO  - Checkpoint 43: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:25,531 [9] INFO  - Checkpoint 44: "2" = "2" passed
+2023-12-19 14:06:25,533 [9] INFO  - Checkpoint 45: "Technology" = "Technology" passed
+2023-12-19 14:06:25,536 [9] INFO  - Checkpoint 46: "Black" = "Black" passed
+2023-12-19 14:06:25,539 [9] INFO  - Checkpoint 47: "3.2 V6" = "3.2 V6" passed
+2023-12-19 14:06:25,543 [9] INFO  - Checkpoint 48: "inventory2.jpg" = "inventory2.jpg" passed
+2023-12-19 14:06:25,546 [9] INFO  - Checkpoint 49: "cars/interior2.jpg" = "cars/interior2.jpg" passed
+2023-12-19 14:06:25,549 [9] INFO  - Checkpoint 50: "1" = "1" passed
+2023-12-19 14:06:25,552 [9] INFO  - Checkpoint 51: "30650" = "30650" passed
+2023-12-19 14:06:25,555 [9] INFO  - Checkpoint 52: "2013" = "2013" passed
+2023-12-19 14:06:25,558 [9] INFO  - Checkpoint 53: "2" = "2" passed
+2023-12-19 14:06:25,562 [9] INFO  - Checkpoint 54: "Leather, Navigation, Ski/BikeRack" = "Leather, Navigation, Ski/BikeRack" passed
+2023-12-19 14:06:25,565 [9] INFO  - Checkpoint 55: "2" = "2" passed
+2023-12-19 14:06:25,568 [9] INFO  - Checkpoint 56: "30995" = "30995" passed
+2023-12-19 14:06:25,571 [9] INFO  - Checkpoint 57: "RA2356/1" = "RA2356/1" passed
+2023-12-19 14:06:25,574 [9] INFO  - Checkpoint 58: "Auto" = "Auto" passed
+2023-12-19 14:06:25,577 [9] INFO  - Checkpoint 59: "1ZVBP8AM1D5256900" = "1ZVBP8AM1D5256900" passed
+2023-12-19 14:06:25,581 [9] INFO  - Checkpoint 60: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:25,584 [9] INFO  - Checkpoint 61: "2" = "2" passed
+2023-12-19 14:06:25,592 [9] INFO  - Checkpoint 62: "3800 Motor City Dr" = "3800 Motor City Dr" passed
+2023-12-19 14:06:25,597 [9] INFO  - Checkpoint 63: "Denver" = "Denver" passed
+2023-12-19 14:06:25,601 [9] INFO  - Checkpoint 64: "Mountain Motors Inc" = "Mountain Motors Inc" passed
+2023-12-19 14:06:25,605 [9] INFO  - Checkpoint 65: "CO" = "CO" passed
+2023-12-19 14:06:25,608 [9] INFO  - Checkpoint 66: "303-222-8766" = "303-222-8766" passed
+2023-12-19 14:06:25,611 [9] INFO  - Checkpoint 67: "www.mmdenver.com" = "www.mmdenver.com" passed
+2023-12-19 14:06:25,614 [9] INFO  - Checkpoint 68: "80202" = "80202" passed
+2023-12-19 14:06:25,618 [9] INFO  - Checkpoint 69: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:25,621 [9] INFO  - Checkpoint 70: "2" = "2" passed
+2023-12-19 14:06:25,624 [9] INFO  - Checkpoint 71: "Gas" = "Gas" passed
+2023-12-19 14:06:25,627 [9] INFO  - Checkpoint 72: "2013" = "2013" passed
+2023-12-19 14:06:25,630 [9] INFO  - Checkpoint 73: "RLX-AWD" = "RLX-AWD" passed
+2023-12-19 14:06:25,633 [9] INFO  - Checkpoint 74: "AWD" = "AWD" passed
+2023-12-19 14:06:25,640 [9] INFO  - Checkpoint 75: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:25,643 [9] INFO  - Checkpoint 76: "1" = "1" passed
+2023-12-19 14:06:25,647 [9] INFO  - Checkpoint 77: "Acura" = "Acura" passed
+2023-12-19 14:06:25,650 [9] INFO  - Checkpoint 78: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:25,653 [9] INFO  - Checkpoint 79: "7" = "7" passed
+2023-12-19 14:06:25,656 [9] INFO  - Checkpoint 80: "Sedan" = "Sedan" passed
+2023-12-19 14:06:25,661 [9] INFO  - Checkpoint 82: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:25,664 [9] INFO  - Checkpoint 83: "3" = "3" passed
+2023-12-19 14:06:25,668 [9] INFO  - Checkpoint 84: "Premium" = "Premium" passed
+2023-12-19 14:06:25,671 [9] INFO  - Checkpoint 85: "Black" = "Black" passed
+2023-12-19 14:06:25,674 [9] INFO  - Checkpoint 86: "3.5 V6" = "3.5 V6" passed
+2023-12-19 14:06:25,677 [9] INFO  - Checkpoint 87: "inventory3.jpg" = "inventory3.jpg" passed
+2023-12-19 14:06:25,681 [9] INFO  - Checkpoint 88: "cars/interior3.jpg" = "cars/interior3.jpg" passed
+2023-12-19 14:06:25,686 [9] INFO  - Checkpoint 89: "1" = "1" passed
+2023-12-19 14:06:25,689 [9] INFO  - Checkpoint 90: "54650" = "54650" passed
+2023-12-19 14:06:25,692 [9] INFO  - Checkpoint 91: "2012" = "2012" passed
+2023-12-19 14:06:25,695 [9] INFO  - Checkpoint 92: "2" = "2" passed
+2023-12-19 14:06:25,698 [9] INFO  - Checkpoint 93: "Leather, Navigation, Backup Camera" = "Leather, Navigation, Backup Camera" passed
+2023-12-19 14:06:25,701 [9] INFO  - Checkpoint 94: "2" = "2" passed
+2023-12-19 14:06:25,704 [9] INFO  - Checkpoint 95: "30995" = "30995" passed
+2023-12-19 14:06:25,707 [9] INFO  - Checkpoint 96: "BN12560" = "BN12560" passed
+2023-12-19 14:06:25,710 [9] INFO  - Checkpoint 97: "Auto" = "Auto" passed
+2023-12-19 14:06:25,713 [9] INFO  - Checkpoint 98: "3N1CB51D35l458771" = "3N1CB51D35l458771" passed
+2023-12-19 14:06:25,716 [9] INFO  - Checkpoint 99: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:25,719 [9] INFO  - Checkpoint 100: "4" = "4" passed
+2023-12-19 14:06:25,722 [9] INFO  - Checkpoint 101: "1673 Blake Rd" = "1673 Blake Rd" passed
+2023-12-19 14:06:25,725 [9] INFO  - Checkpoint 102: "Aurora" = "Aurora" passed
+2023-12-19 14:06:25,729 [9] INFO  - Checkpoint 103: "Aurora Acura" = "Aurora Acura" passed
+2023-12-19 14:06:25,731 [9] INFO  - Checkpoint 104: "CO" = "CO" passed
+2023-12-19 14:06:25,734 [9] INFO  - Checkpoint 105: "303-955-0134" = "303-955-0134" passed
+2023-12-19 14:06:25,736 [9] INFO  - Checkpoint 106: "www.aurora_acura.com" = "www.aurora_acura.com" passed
+2023-12-19 14:06:25,740 [9] INFO  - Checkpoint 107: "80203" = "80203" passed
+2023-12-19 14:06:25,742 [9] INFO  - Checkpoint 108: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:25,745 [9] INFO  - Checkpoint 109: "2" = "2" passed
+2023-12-19 14:06:25,748 [9] INFO  - Checkpoint 110: "Gas" = "Gas" passed
+2023-12-19 14:06:25,751 [9] INFO  - Checkpoint 111: "2013" = "2013" passed
+2023-12-19 14:06:25,753 [9] INFO  - Checkpoint 112: "RLX-AWD" = "RLX-AWD" passed
+2023-12-19 14:06:25,756 [9] INFO  - Checkpoint 113: "AWD" = "AWD" passed
+2023-12-19 14:06:25,759 [9] INFO  - Checkpoint 114: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:25,762 [9] INFO  - Checkpoint 115: "1" = "1" passed
+2023-12-19 14:06:25,767 [9] INFO  - Checkpoint 116: "Acura" = "Acura" passed
+2023-12-19 14:06:25,770 [9] INFO  - Checkpoint 117: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:25,773 [9] INFO  - Checkpoint 118: "7" = "7" passed
+2023-12-19 14:06:25,782 [9] INFO  - Checkpoint 119: "Sedan" = "Sedan" passed
+2023-12-19 14:06:25,786 [9] INFO  - Checkpoint 121: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:25,789 [9] INFO  - Checkpoint 122: "4" = "4" passed
+2023-12-19 14:06:25,792 [9] INFO  - Checkpoint 123: "Sport" = "Sport" passed
+2023-12-19 14:06:25,795 [9] INFO  - Checkpoint 124: "Silver" = "Silver" passed
+2023-12-19 14:06:25,797 [9] INFO  - Checkpoint 125: "3.5 V6" = "3.5 V6" passed
+2023-12-19 14:06:25,800 [9] INFO  - Checkpoint 126: "inventory4.jpg" = "inventory4.jpg" passed
+2023-12-19 14:06:25,803 [9] INFO  - Checkpoint 127: "cars/interior4.jpg" = "cars/interior4.jpg" passed
+2023-12-19 14:06:25,806 [9] INFO  - Checkpoint 128: "1" = "1" passed
+2023-12-19 14:06:25,809 [9] INFO  - Checkpoint 129: "78400" = "78400" passed
+2023-12-19 14:06:25,813 [9] INFO  - Checkpoint 130: "2010" = "2010" passed
+2023-12-19 14:06:25,816 [9] INFO  - Checkpoint 131: "2" = "2" passed
+2023-12-19 14:06:25,819 [9] INFO  - Checkpoint 132: "Ski Rack, Tow kit" = "Ski Rack, Tow kit" passed
+2023-12-19 14:06:25,822 [9] INFO  - Checkpoint 133: "4" = "4" passed
+2023-12-19 14:06:25,825 [9] INFO  - Checkpoint 134: "21405" = "21405" passed
+2023-12-19 14:06:25,827 [9] INFO  - Checkpoint 135: "BN13456" = "BN13456" passed
+2023-12-19 14:06:25,830 [9] INFO  - Checkpoint 136: "Auto" = "Auto" passed
+2023-12-19 14:06:25,833 [9] INFO  - Checkpoint 137: "2T1KR32E37C639012" = "2T1KR32E37C639012" passed
+2023-12-19 14:06:25,835 [9] INFO  - Checkpoint 138: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:25,839 [9] INFO  - Checkpoint 139: "4" = "4" passed
+2023-12-19 14:06:25,842 [9] INFO  - Checkpoint 140: "1673 Blake Rd" = "1673 Blake Rd" passed
+2023-12-19 14:06:25,844 [9] INFO  - Checkpoint 141: "Aurora" = "Aurora" passed
+2023-12-19 14:06:25,847 [9] INFO  - Checkpoint 142: "Aurora Acura" = "Aurora Acura" passed
+2023-12-19 14:06:25,851 [9] INFO  - Checkpoint 143: "CO" = "CO" passed
+2023-12-19 14:06:25,854 [9] INFO  - Checkpoint 144: "303-955-0134" = "303-955-0134" passed
+2023-12-19 14:06:25,857 [9] INFO  - Checkpoint 145: "www.aurora_acura.com" = "www.aurora_acura.com" passed
+2023-12-19 14:06:25,859 [9] INFO  - Checkpoint 146: "80203" = "80203" passed
+2023-12-19 14:06:25,862 [9] INFO  - Checkpoint 147: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:25,865 [9] INFO  - Checkpoint 148: "2" = "2" passed
+2023-12-19 14:06:25,867 [9] INFO  - Checkpoint 149: "Gas" = "Gas" passed
+2023-12-19 14:06:25,870 [9] INFO  - Checkpoint 150: "2013" = "2013" passed
+2023-12-19 14:06:25,873 [9] INFO  - Checkpoint 151: "RLX-AWD" = "RLX-AWD" passed
+2023-12-19 14:06:25,876 [9] INFO  - Checkpoint 152: "AWD" = "AWD" passed
+2023-12-19 14:06:25,878 [9] INFO  - Checkpoint 153: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:25,881 [9] INFO  - Checkpoint 154: "1" = "1" passed
+2023-12-19 14:06:25,884 [9] INFO  - Checkpoint 155: "Acura" = "Acura" passed
+2023-12-19 14:06:25,887 [9] INFO  - Checkpoint 156: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:25,889 [9] INFO  - Checkpoint 157: "7" = "7" passed
+2023-12-19 14:06:25,892 [9] INFO  - Checkpoint 158: "Sedan" = "Sedan" passed
+2023-12-19 14:06:25,896 [9] INFO  - Checkpoint 160: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:25,899 [9] INFO  - Checkpoint 161: "5" = "5" passed
+2023-12-19 14:06:25,902 [9] INFO  - Checkpoint 162: "Sport" = "Sport" passed
+2023-12-19 14:06:25,905 [9] INFO  - Checkpoint 163: "Red" = "Red" passed
+2023-12-19 14:06:25,907 [9] INFO  - Checkpoint 164: "1.8T" = "1.8T" passed
+2023-12-19 14:06:25,910 [9] INFO  - Checkpoint 165: "inventory5.jpg" = "inventory5.jpg" passed
+2023-12-19 14:06:25,913 [9] INFO  - Checkpoint 166: "cars/interior5.jpg" = "cars/interior5.jpg" passed
+2023-12-19 14:06:25,919 [9] INFO  - Checkpoint 167: "2" = "2" passed
+2023-12-19 14:06:25,922 [9] INFO  - Checkpoint 168: "98145" = "98145" passed
+2023-12-19 14:06:25,925 [9] INFO  - Checkpoint 169: "2008" = "2008" passed
+2023-12-19 14:06:25,929 [9] INFO  - Checkpoint 170: "11" = "11" passed
+2023-12-19 14:06:25,932 [9] INFO  - Checkpoint 171: "Leather, Dual Air, 6 Speed" = "Leather, Dual Air, 6 Speed" passed
+2023-12-19 14:06:25,936 [9] INFO  - Checkpoint 172: "4" = "4" passed
+2023-12-19 14:06:25,939 [9] INFO  - Checkpoint 173: "7800" = "7800" passed
+2023-12-19 14:06:25,942 [9] INFO  - Checkpoint 174: "BN13467" = "BN13467" passed
+2023-12-19 14:06:25,946 [9] INFO  - Checkpoint 175: "Manual" = "Manual" passed
+2023-12-19 14:06:25,951 [9] INFO  - Checkpoint 176: "3N1CB51D35l458773" = "3N1CB51D35l458773" passed
+2023-12-19 14:06:25,955 [9] INFO  - Checkpoint 177: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:25,958 [9] INFO  - Checkpoint 178: "4" = "4" passed
+2023-12-19 14:06:25,963 [9] INFO  - Checkpoint 179: "1673 Blake Rd" = "1673 Blake Rd" passed
+2023-12-19 14:06:25,970 [9] INFO  - Checkpoint 180: "Aurora" = "Aurora" passed
+2023-12-19 14:06:25,974 [9] INFO  - Checkpoint 181: "Aurora Acura" = "Aurora Acura" passed
+2023-12-19 14:06:25,977 [9] INFO  - Checkpoint 182: "CO" = "CO" passed
+2023-12-19 14:06:25,980 [9] INFO  - Checkpoint 183: "303-955-0134" = "303-955-0134" passed
+2023-12-19 14:06:25,983 [9] INFO  - Checkpoint 184: "www.aurora_acura.com" = "www.aurora_acura.com" passed
+2023-12-19 14:06:25,986 [9] INFO  - Checkpoint 185: "80203" = "80203" passed
+2023-12-19 14:06:25,990 [9] INFO  - Checkpoint 186: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:25,994 [9] INFO  - Checkpoint 187: "11" = "11" passed
+2023-12-19 14:06:25,997 [9] INFO  - Checkpoint 188: "Gas" = "Gas" passed
+2023-12-19 14:06:26,001 [9] INFO  - Checkpoint 189: "1996" = "1996" passed
+2023-12-19 14:06:26,005 [9] INFO  - Checkpoint 190: "S4-S" = "S4-S" passed
+2023-12-19 14:06:26,008 [9] INFO  - Checkpoint 191: "Sport" = "Sport" passed
+2023-12-19 14:06:26,012 [9] INFO  - Checkpoint 192: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,016 [9] INFO  - Checkpoint 193: "2" = "2" passed
+2023-12-19 14:06:26,020 [9] INFO  - Checkpoint 194: "Audi" = "Audi" passed
+2023-12-19 14:06:26,024 [9] INFO  - Checkpoint 195: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,027 [9] INFO  - Checkpoint 196: "7" = "7" passed
+2023-12-19 14:06:26,030 [9] INFO  - Checkpoint 197: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,035 [9] INFO  - Checkpoint 199: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,038 [9] INFO  - Checkpoint 200: "6" = "6" passed
+2023-12-19 14:06:26,043 [9] INFO  - Checkpoint 201: "xDrivePlus" = "xDrivePlus" passed
+2023-12-19 14:06:26,046 [9] INFO  - Checkpoint 202: "Black" = "Black" passed
+2023-12-19 14:06:26,049 [9] INFO  - Checkpoint 203: "3.5L" = "3.5L" passed
+2023-12-19 14:06:26,052 [9] INFO  - Checkpoint 204: "inventory6.jpg" = "inventory6.jpg" passed
+2023-12-19 14:06:26,055 [9] INFO  - Checkpoint 205: "cars/interior6.jpg" = "cars/interior6.jpg" passed
+2023-12-19 14:06:26,059 [9] INFO  - Checkpoint 206: "3" = "3" passed
+2023-12-19 14:06:26,062 [9] INFO  - Checkpoint 207: "75350" = "75350" passed
+2023-12-19 14:06:26,065 [9] INFO  - Checkpoint 208: "2010" = "2010" passed
+2023-12-19 14:06:26,068 [9] INFO  - Checkpoint 209: "27" = "27" passed
+2023-12-19 14:06:26,071 [9] INFO  - Checkpoint 210: "Leather, Navigation, Rear Air" = "Leather, Navigation, Rear Air" passed
+2023-12-19 14:06:26,075 [9] INFO  - Checkpoint 211: "1" = "1" passed
+2023-12-19 14:06:26,078 [9] INFO  - Checkpoint 212: "34500" = "34500" passed
+2023-12-19 14:06:26,082 [9] INFO  - Checkpoint 213: "N2367J6" = "N2367J6" passed
+2023-12-19 14:06:26,086 [9] INFO  - Checkpoint 214: "Auto" = "Auto" passed
+2023-12-19 14:06:26,089 [9] INFO  - Checkpoint 215: "3N1CB51D35l458774" = "3N1CB51D35l458774" passed
+2023-12-19 14:06:26,092 [9] INFO  - Checkpoint 216: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,099 [9] INFO  - Checkpoint 217: "5" = "5" passed
+2023-12-19 14:06:26,103 [9] INFO  - Checkpoint 218: "126 Rte 76" = "126 Rte 76" passed
+2023-12-19 14:06:26,107 [9] INFO  - Checkpoint 219: "Fort Collins" = "Fort Collins" passed
+2023-12-19 14:06:26,111 [9] INFO  - Checkpoint 220: "Hilton Honda" = "Hilton Honda" passed
+2023-12-19 14:06:26,117 [9] INFO  - Checkpoint 221: "CO" = "CO" passed
+2023-12-19 14:06:26,121 [9] INFO  - Checkpoint 222: "303-123-6789" = "303-123-6789" passed
+2023-12-19 14:06:26,123 [9] INFO  - Checkpoint 223: "www.hiltonhonda.com" = "www.hiltonhonda.com" passed
+2023-12-19 14:06:26,126 [9] INFO  - Checkpoint 224: "80503" = "80503" passed
+2023-12-19 14:06:26,129 [9] INFO  - Checkpoint 225: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,131 [9] INFO  - Checkpoint 226: "27" = "27" passed
+2023-12-19 14:06:26,134 [9] INFO  - Checkpoint 227: "Gas" = "Gas" passed
+2023-12-19 14:06:26,137 [9] INFO  - Checkpoint 228: "1990" = "1990" passed
+2023-12-19 14:06:26,139 [9] INFO  - Checkpoint 229: "7-Series-P" = "7-Series-P" passed
+2023-12-19 14:06:26,142 [9] INFO  - Checkpoint 230: "Premium" = "Premium" passed
+2023-12-19 14:06:26,145 [9] INFO  - Checkpoint 231: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,147 [9] INFO  - Checkpoint 232: "3" = "3" passed
+2023-12-19 14:06:26,150 [9] INFO  - Checkpoint 233: "BMW" = "BMW" passed
+2023-12-19 14:06:26,153 [9] INFO  - Checkpoint 234: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,155 [9] INFO  - Checkpoint 235: "7" = "7" passed
+2023-12-19 14:06:26,158 [9] INFO  - Checkpoint 236: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,162 [9] INFO  - Checkpoint 238: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,165 [9] INFO  - Checkpoint 239: "7" = "7" passed
+2023-12-19 14:06:26,167 [9] INFO  - Checkpoint 240: "Base" = "Base" passed
+2023-12-19 14:06:26,170 [9] INFO  - Checkpoint 241: "Blue" = "Blue" passed
+2023-12-19 14:06:26,173 [9] INFO  - Checkpoint 242: "2.0T" = "2.0T" passed
+2023-12-19 14:06:26,175 [9] INFO  - Checkpoint 243: "inventory7.jpg" = "inventory7.jpg" passed
+2023-12-19 14:06:26,178 [9] INFO  - Checkpoint 244: "cars/interior7.jpg" = "cars/interior7.jpg" passed
+2023-12-19 14:06:26,181 [9] INFO  - Checkpoint 245: "2" = "2" passed
+2023-12-19 14:06:26,184 [9] INFO  - Checkpoint 246: "104300" = "104300" passed
+2023-12-19 14:06:26,187 [9] INFO  - Checkpoint 247: "2008" = "2008" passed
+2023-12-19 14:06:26,190 [9] INFO  - Checkpoint 248: "10" = "10" passed
+2023-12-19 14:06:26,193 [9] INFO  - Checkpoint 249: "Premium Audio Upgrade" = "Premium Audio Upgrade" passed
+2023-12-19 14:06:26,195 [9] INFO  - Checkpoint 250: "1" = "1" passed
+2023-12-19 14:06:26,198 [9] INFO  - Checkpoint 251: "10750" = "10750" passed
+2023-12-19 14:06:26,201 [9] INFO  - Checkpoint 252: "ASN29001" = "ASN29001" passed
+2023-12-19 14:06:26,203 [9] INFO  - Checkpoint 253: "Auto" = "Auto" passed
+2023-12-19 14:06:26,206 [9] INFO  - Checkpoint 254: "2T1KR32E37C639015" = "2T1KR32E37C639015" passed
+2023-12-19 14:06:26,209 [9] INFO  - Checkpoint 255: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,212 [9] INFO  - Checkpoint 256: "6" = "6" passed
+2023-12-19 14:06:26,214 [9] INFO  - Checkpoint 257: "570 Lane St" = "570 Lane St" passed
+2023-12-19 14:06:26,217 [9] INFO  - Checkpoint 258: "Englewood" = "Englewood" passed
+2023-12-19 14:06:26,220 [9] INFO  - Checkpoint 259: "Terrys VW" = "Terrys VW" passed
+2023-12-19 14:06:26,223 [9] INFO  - Checkpoint 260: "CO" = "CO" passed
+2023-12-19 14:06:26,226 [9] INFO  - Checkpoint 261: "303- 560-3412" = "303- 560-3412" passed
+2023-12-19 14:06:26,232 [9] INFO  - Checkpoint 262: "www.terry_vag.com" = "www.terry_vag.com" passed
+2023-12-19 14:06:26,235 [9] INFO  - Checkpoint 263: "80205" = "80205" passed
+2023-12-19 14:06:26,237 [9] INFO  - Checkpoint 264: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,240 [9] INFO  - Checkpoint 265: "10" = "10" passed
+2023-12-19 14:06:26,243 [9] INFO  - Checkpoint 266: "Gas" = "Gas" passed
+2023-12-19 14:06:26,246 [9] INFO  - Checkpoint 267: "1996" = "1996" passed
+2023-12-19 14:06:26,252 [9] INFO  - Checkpoint 268: "A4-B" = "A4-B" passed
+2023-12-19 14:06:26,254 [9] INFO  - Checkpoint 269: "Base" = "Base" passed
+2023-12-19 14:06:26,257 [9] INFO  - Checkpoint 270: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,260 [9] INFO  - Checkpoint 271: "2" = "2" passed
+2023-12-19 14:06:26,263 [9] INFO  - Checkpoint 272: "Audi" = "Audi" passed
+2023-12-19 14:06:26,265 [9] INFO  - Checkpoint 273: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,268 [9] INFO  - Checkpoint 274: "7" = "7" passed
+2023-12-19 14:06:26,272 [9] INFO  - Checkpoint 275: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,276 [9] INFO  - Checkpoint 277: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,280 [9] INFO  - Checkpoint 278: "8" = "8" passed
+2023-12-19 14:06:26,282 [9] INFO  - Checkpoint 279: "Premium" = "Premium" passed
+2023-12-19 14:06:26,285 [9] INFO  - Checkpoint 280: "Silver" = "Silver" passed
+2023-12-19 14:06:26,288 [9] INFO  - Checkpoint 281: "2.0T" = "2.0T" passed
+2023-12-19 14:06:26,290 [9] INFO  - Checkpoint 282: "inventory8.jpg" = "inventory8.jpg" passed
+2023-12-19 14:06:26,293 [9] INFO  - Checkpoint 283: "cars/interior8.jpg" = "cars/interior8.jpg" passed
+2023-12-19 14:06:26,296 [9] INFO  - Checkpoint 284: "2" = "2" passed
+2023-12-19 14:06:26,298 [9] INFO  - Checkpoint 285: "62000" = "62000" passed
+2023-12-19 14:06:26,301 [9] INFO  - Checkpoint 286: "2012" = "2012" passed
+2023-12-19 14:06:26,304 [9] INFO  - Checkpoint 287: "10" = "10" passed
+2023-12-19 14:06:26,306 [9] INFO  - Checkpoint 288: "Leather, Navigation, Bluetooth" = "Leather, Navigation, Bluetooth" passed
+2023-12-19 14:06:26,309 [9] INFO  - Checkpoint 289: "3" = "3" passed
+2023-12-19 14:06:26,312 [9] INFO  - Checkpoint 290: "20400" = "20400" passed
+2023-12-19 14:06:26,315 [9] INFO  - Checkpoint 291: "ASN34501" = "ASN34501" passed
+2023-12-19 14:06:26,317 [9] INFO  - Checkpoint 292: "Auto" = "Auto" passed
+2023-12-19 14:06:26,320 [9] INFO  - Checkpoint 293: "1ZVBP8AM1D5256906" = "1ZVBP8AM1D5256906" passed
+2023-12-19 14:06:26,323 [9] INFO  - Checkpoint 294: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,326 [9] INFO  - Checkpoint 295: "6" = "6" passed
+2023-12-19 14:06:26,329 [9] INFO  - Checkpoint 296: "570 Lane St" = "570 Lane St" passed
+2023-12-19 14:06:26,332 [9] INFO  - Checkpoint 297: "Englewood" = "Englewood" passed
+2023-12-19 14:06:26,334 [9] INFO  - Checkpoint 298: "Terrys VW" = "Terrys VW" passed
+2023-12-19 14:06:26,337 [9] INFO  - Checkpoint 299: "CO" = "CO" passed
+2023-12-19 14:06:26,340 [9] INFO  - Checkpoint 300: "303- 560-3412" = "303- 560-3412" passed
+2023-12-19 14:06:26,343 [9] INFO  - Checkpoint 301: "www.terry_vag.com" = "www.terry_vag.com" passed
+2023-12-19 14:06:26,353 [9] INFO  - Checkpoint 302: "80205" = "80205" passed
+2023-12-19 14:06:26,356 [9] INFO  - Checkpoint 303: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,360 [9] INFO  - Checkpoint 304: "10" = "10" passed
+2023-12-19 14:06:26,363 [9] INFO  - Checkpoint 305: "Gas" = "Gas" passed
+2023-12-19 14:06:26,365 [9] INFO  - Checkpoint 306: "1996" = "1996" passed
+2023-12-19 14:06:26,368 [9] INFO  - Checkpoint 307: "A4-B" = "A4-B" passed
+2023-12-19 14:06:26,371 [9] INFO  - Checkpoint 308: "Base" = "Base" passed
+2023-12-19 14:06:26,373 [9] INFO  - Checkpoint 309: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,376 [9] INFO  - Checkpoint 310: "2" = "2" passed
+2023-12-19 14:06:26,380 [9] INFO  - Checkpoint 311: "Audi" = "Audi" passed
+2023-12-19 14:06:26,383 [9] INFO  - Checkpoint 312: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,386 [9] INFO  - Checkpoint 313: "7" = "7" passed
+2023-12-19 14:06:26,389 [9] INFO  - Checkpoint 314: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,394 [9] INFO  - Checkpoint 316: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,396 [9] INFO  - Checkpoint 317: "9" = "9" passed
+2023-12-19 14:06:26,402 [9] INFO  - Checkpoint 318: "Base" = "Base" passed
+2023-12-19 14:06:26,405 [9] INFO  - Checkpoint 319: "Silver" = "Silver" passed
+2023-12-19 14:06:26,407 [9] INFO  - Checkpoint 320: "3.0L" = "3.0L" passed
+2023-12-19 14:06:26,410 [9] INFO  - Checkpoint 321: "inventory9.jpg" = "inventory9.jpg" passed
+2023-12-19 14:06:26,412 [9] INFO  - Checkpoint 322: "cars/interior9.jpg" = "cars/interior9.jpg" passed
+2023-12-19 14:06:26,415 [9] INFO  - Checkpoint 323: "3" = "3" passed
+2023-12-19 14:06:26,418 [9] INFO  - Checkpoint 324: "58900" = "58900" passed
+2023-12-19 14:06:26,420 [9] INFO  - Checkpoint 325: "2009" = "2009" passed
+2023-12-19 14:06:26,423 [9] INFO  - Checkpoint 326: "27" = "27" passed
+2023-12-19 14:06:26,426 [9] INFO  - Checkpoint 327: "Leather, Navigation, Rear Air" = "Leather, Navigation, Rear Air" passed
+2023-12-19 14:06:26,429 [9] INFO  - Checkpoint 328: "2" = "2" passed
+2023-12-19 14:06:26,432 [9] INFO  - Checkpoint 329: "32295" = "32295" passed
+2023-12-19 14:06:26,435 [9] INFO  - Checkpoint 330: "ASN90845" = "ASN90845" passed
+2023-12-19 14:06:26,437 [9] INFO  - Checkpoint 331: "Auto" = "Auto" passed
+2023-12-19 14:06:26,440 [9] INFO  - Checkpoint 332: "1ZVBP8AM1D5256907" = "1ZVBP8AM1D5256907" passed
+2023-12-19 14:06:26,443 [9] INFO  - Checkpoint 333: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,446 [9] INFO  - Checkpoint 334: "6" = "6" passed
+2023-12-19 14:06:26,449 [9] INFO  - Checkpoint 335: "570 Lane St" = "570 Lane St" passed
+2023-12-19 14:06:26,451 [9] INFO  - Checkpoint 336: "Englewood" = "Englewood" passed
+2023-12-19 14:06:26,454 [9] INFO  - Checkpoint 337: "Terrys VW" = "Terrys VW" passed
+2023-12-19 14:06:26,456 [9] INFO  - Checkpoint 338: "CO" = "CO" passed
+2023-12-19 14:06:26,459 [9] INFO  - Checkpoint 339: "303- 560-3412" = "303- 560-3412" passed
+2023-12-19 14:06:26,462 [9] INFO  - Checkpoint 340: "www.terry_vag.com" = "www.terry_vag.com" passed
+2023-12-19 14:06:26,465 [9] INFO  - Checkpoint 341: "80205" = "80205" passed
+2023-12-19 14:06:26,468 [9] INFO  - Checkpoint 342: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,476 [9] INFO  - Checkpoint 343: "27" = "27" passed
+2023-12-19 14:06:26,479 [9] INFO  - Checkpoint 344: "Gas" = "Gas" passed
+2023-12-19 14:06:26,483 [9] INFO  - Checkpoint 345: "1990" = "1990" passed
+2023-12-19 14:06:26,488 [9] INFO  - Checkpoint 346: "7-Series-P" = "7-Series-P" passed
+2023-12-19 14:06:26,491 [9] INFO  - Checkpoint 347: "Premium" = "Premium" passed
+2023-12-19 14:06:26,493 [9] INFO  - Checkpoint 348: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,496 [9] INFO  - Checkpoint 349: "3" = "3" passed
+2023-12-19 14:06:26,499 [9] INFO  - Checkpoint 350: "BMW" = "BMW" passed
+2023-12-19 14:06:26,502 [9] INFO  - Checkpoint 351: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,505 [9] INFO  - Checkpoint 352: "7" = "7" passed
+2023-12-19 14:06:26,508 [9] INFO  - Checkpoint 353: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,512 [9] INFO  - Checkpoint 355: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,514 [9] INFO  - Checkpoint 356: "10" = "10" passed
+2023-12-19 14:06:26,517 [9] INFO  - Checkpoint 357: "Technology Plus" = "Technology Plus" passed
+2023-12-19 14:06:26,520 [9] INFO  - Checkpoint 358: "Black" = "Black" passed
+2023-12-19 14:06:26,523 [9] INFO  - Checkpoint 359: "3.5 V6" = "3.5 V6" passed
+2023-12-19 14:06:26,525 [9] INFO  - Checkpoint 360: "inventory10.jpg" = "inventory10.jpg" passed
+2023-12-19 14:06:26,528 [9] INFO  - Checkpoint 361: "cars/interior10.jpg" = "cars/interior10.jpg" passed
+2023-12-19 14:06:26,531 [9] INFO  - Checkpoint 362: "1" = "1" passed
+2023-12-19 14:06:26,534 [9] INFO  - Checkpoint 363: "54650" = "54650" passed
+2023-12-19 14:06:26,536 [9] INFO  - Checkpoint 364: "2012" = "2012" passed
+2023-12-19 14:06:26,539 [9] INFO  - Checkpoint 365: "1" = "1" passed
+2023-12-19 14:06:26,542 [9] INFO  - Checkpoint 366: "Leather, Navigation, Backup Camera" = "Leather, Navigation, Backup Camera" passed
+2023-12-19 14:06:26,544 [9] INFO  - Checkpoint 367: "2" = "2" passed
+2023-12-19 14:06:26,547 [9] INFO  - Checkpoint 368: "30995" = "30995" passed
+2023-12-19 14:06:26,552 [9] INFO  - Checkpoint 369: "245980A" = "245980A" passed
+2023-12-19 14:06:26,555 [9] INFO  - Checkpoint 370: "Auto" = "Auto" passed
+2023-12-19 14:06:26,557 [9] INFO  - Checkpoint 371: "3N1CB51D35l458778" = "3N1CB51D35l458778" passed
+2023-12-19 14:06:26,561 [9] INFO  - Checkpoint 372: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,563 [9] INFO  - Checkpoint 373: "5" = "5" passed
+2023-12-19 14:06:26,566 [9] INFO  - Checkpoint 374: "126 Rte 76" = "126 Rte 76" passed
+2023-12-19 14:06:26,569 [9] INFO  - Checkpoint 375: "Fort Collins" = "Fort Collins" passed
+2023-12-19 14:06:26,571 [9] INFO  - Checkpoint 376: "Hilton Honda" = "Hilton Honda" passed
+2023-12-19 14:06:26,574 [9] INFO  - Checkpoint 377: "CO" = "CO" passed
+2023-12-19 14:06:26,577 [9] INFO  - Checkpoint 378: "303-123-6789" = "303-123-6789" passed
+2023-12-19 14:06:26,580 [9] INFO  - Checkpoint 379: "www.hiltonhonda.com" = "www.hiltonhonda.com" passed
+2023-12-19 14:06:26,582 [9] INFO  - Checkpoint 380: "80503" = "80503" passed
+2023-12-19 14:06:26,585 [9] INFO  - Checkpoint 381: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,588 [9] INFO  - Checkpoint 382: "1" = "1" passed
+2023-12-19 14:06:26,592 [9] INFO  - Checkpoint 383: "Gas" = "Gas" passed
+2023-12-19 14:06:26,603 [9] INFO  - Checkpoint 384: "2013" = "2013" passed
+2023-12-19 14:06:26,606 [9] INFO  - Checkpoint 385: "RLX-B" = "RLX-B" passed
+2023-12-19 14:06:26,609 [9] INFO  - Checkpoint 386: "Base" = "Base" passed
+2023-12-19 14:06:26,611 [9] INFO  - Checkpoint 387: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,614 [9] INFO  - Checkpoint 388: "1" = "1" passed
+2023-12-19 14:06:26,617 [9] INFO  - Checkpoint 389: "Acura" = "Acura" passed
+2023-12-19 14:06:26,620 [9] INFO  - Checkpoint 390: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,622 [9] INFO  - Checkpoint 391: "7" = "7" passed
+2023-12-19 14:06:26,625 [9] INFO  - Checkpoint 392: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,629 [9] INFO  - Checkpoint 394: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,632 [9] INFO  - Checkpoint 395: "11" = "11" passed
+2023-12-19 14:06:26,634 [9] INFO  - Checkpoint 396: "Technology Plus" = "Technology Plus" passed
+2023-12-19 14:06:26,637 [9] INFO  - Checkpoint 397: "Green" = "Green" passed
+2023-12-19 14:06:26,640 [9] INFO  - Checkpoint 398: "3.5 V8" = "3.5 V8" passed
+2023-12-19 14:06:26,643 [9] INFO  - Checkpoint 399: "inventory11.jpg" = "inventory11.jpg" passed
+2023-12-19 14:06:26,646 [9] INFO  - Checkpoint 400: "cars/interior11.jpg" = "cars/interior11.jpg" passed
+2023-12-19 14:06:26,648 [9] INFO  - Checkpoint 401: "1" = "1" passed
+2023-12-19 14:06:26,651 [9] INFO  - Checkpoint 402: "74850" = "74850" passed
+2023-12-19 14:06:26,654 [9] INFO  - Checkpoint 403: "2011" = "2011" passed
+2023-12-19 14:06:26,656 [9] INFO  - Checkpoint 404: "1" = "1" passed
+2023-12-19 14:06:26,659 [9] INFO  - Checkpoint 405: "Leather, Navigation" = "Leather, Navigation" passed
+2023-12-19 14:06:26,662 [9] INFO  - Checkpoint 406: "1" = "1" passed
+2023-12-19 14:06:26,665 [9] INFO  - Checkpoint 407: "20995" = "20995" passed
+2023-12-19 14:06:26,667 [9] INFO  - Checkpoint 408: "245180A" = "245180A" passed
+2023-12-19 14:06:26,670 [9] INFO  - Checkpoint 409: "Auto" = "Auto" passed
+2023-12-19 14:06:26,673 [9] INFO  - Checkpoint 410: "3N1CB41D32l458778" = "3N1CB41D32l458778" passed
+2023-12-19 14:06:26,675 [9] INFO  - Checkpoint 411: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,678 [9] INFO  - Checkpoint 412: "5" = "5" passed
+2023-12-19 14:06:26,681 [9] INFO  - Checkpoint 413: "126 Rte 76" = "126 Rte 76" passed
+2023-12-19 14:06:26,683 [9] INFO  - Checkpoint 414: "Fort Collins" = "Fort Collins" passed
+2023-12-19 14:06:26,686 [9] INFO  - Checkpoint 415: "Hilton Honda" = "Hilton Honda" passed
+2023-12-19 14:06:26,689 [9] INFO  - Checkpoint 416: "CO" = "CO" passed
+2023-12-19 14:06:26,692 [9] INFO  - Checkpoint 417: "303-123-6789" = "303-123-6789" passed
+2023-12-19 14:06:26,694 [9] INFO  - Checkpoint 418: "www.hiltonhonda.com" = "www.hiltonhonda.com" passed
+2023-12-19 14:06:26,700 [9] INFO  - Checkpoint 419: "80503" = "80503" passed
+2023-12-19 14:06:26,703 [9] INFO  - Checkpoint 420: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,706 [9] INFO  - Checkpoint 421: "1" = "1" passed
+2023-12-19 14:06:26,709 [9] INFO  - Checkpoint 422: "Gas" = "Gas" passed
+2023-12-19 14:06:26,711 [9] INFO  - Checkpoint 423: "2013" = "2013" passed
+2023-12-19 14:06:26,714 [9] INFO  - Checkpoint 424: "RLX-B" = "RLX-B" passed
+2023-12-19 14:06:26,721 [9] INFO  - Checkpoint 425: "Base" = "Base" passed
+2023-12-19 14:06:26,724 [9] INFO  - Checkpoint 426: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,730 [9] INFO  - Checkpoint 427: "1" = "1" passed
+2023-12-19 14:06:26,733 [9] INFO  - Checkpoint 428: "Acura" = "Acura" passed
+2023-12-19 14:06:26,735 [9] INFO  - Checkpoint 429: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,738 [9] INFO  - Checkpoint 430: "7" = "7" passed
+2023-12-19 14:06:26,741 [9] INFO  - Checkpoint 431: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,744 [9] INFO  - Checkpoint 433: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,747 [9] INFO  - Checkpoint 434: "12" = "12" passed
+2023-12-19 14:06:26,750 [9] INFO  - Checkpoint 435: "Luxury" = "Luxury" passed
+2023-12-19 14:06:26,752 [9] INFO  - Checkpoint 436: "Black" = "Black" passed
+2023-12-19 14:06:26,755 [9] INFO  - Checkpoint 437: "3.0 V6" = "3.0 V6" passed
+2023-12-19 14:06:26,758 [9] INFO  - Checkpoint 438: "inventory22.jpg" = "inventory22.jpg" passed
+2023-12-19 14:06:26,760 [9] INFO  - Checkpoint 439: "cars/interior21.jpg" = "cars/interior21.jpg" passed
+2023-12-19 14:06:26,763 [9] INFO  - Checkpoint 440: "2" = "2" passed
+2023-12-19 14:06:26,766 [9] INFO  - Checkpoint 441: "24650" = "24650" passed
+2023-12-19 14:06:26,769 [9] INFO  - Checkpoint 442: "2012" = "2012" passed
+2023-12-19 14:06:26,772 [9] INFO  - Checkpoint 443: "12" = "12" passed
+2023-12-19 14:06:26,774 [9] INFO  - Checkpoint 444: "Leather" = "Leather" passed
+2023-12-19 14:06:26,777 [9] INFO  - Checkpoint 445: "2" = "2" passed
+2023-12-19 14:06:26,780 [9] INFO  - Checkpoint 446: "11995" = "11995" passed
+2023-12-19 14:06:26,783 [9] INFO  - Checkpoint 447: "246987A" = "246987A" passed
+2023-12-19 14:06:26,785 [9] INFO  - Checkpoint 448: "Auto" = "Auto" passed
+2023-12-19 14:06:26,788 [9] INFO  - Checkpoint 449: "3H1CB51D35l453773" = "3H1CB51D35l453773" passed
+2023-12-19 14:06:26,791 [9] INFO  - Checkpoint 450: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,794 [9] INFO  - Checkpoint 451: "5" = "5" passed
+2023-12-19 14:06:26,796 [9] INFO  - Checkpoint 452: "126 Rte 76" = "126 Rte 76" passed
+2023-12-19 14:06:26,799 [9] INFO  - Checkpoint 453: "Fort Collins" = "Fort Collins" passed
+2023-12-19 14:06:26,802 [9] INFO  - Checkpoint 454: "Hilton Honda" = "Hilton Honda" passed
+2023-12-19 14:06:26,805 [9] INFO  - Checkpoint 455: "CO" = "CO" passed
+2023-12-19 14:06:26,808 [9] INFO  - Checkpoint 456: "303-123-6789" = "303-123-6789" passed
+2023-12-19 14:06:26,810 [9] INFO  - Checkpoint 457: "www.hiltonhonda.com" = "www.hiltonhonda.com" passed
+2023-12-19 14:06:26,813 [9] INFO  - Checkpoint 458: "80503" = "80503" passed
+2023-12-19 14:06:26,816 [9] INFO  - Checkpoint 459: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,818 [9] INFO  - Checkpoint 460: "12" = "12" passed
+2023-12-19 14:06:26,821 [9] INFO  - Checkpoint 461: "Gas" = "Gas" passed
+2023-12-19 14:06:26,824 [9] INFO  - Checkpoint 462: "1996" = "1996" passed
+2023-12-19 14:06:26,827 [9] INFO  - Checkpoint 463: "A4-C" = "A4-C" passed
+2023-12-19 14:06:26,829 [9] INFO  - Checkpoint 464: "Convertible" = "Convertible" passed
+2023-12-19 14:06:26,837 [9] INFO  - Checkpoint 465: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,840 [9] INFO  - Checkpoint 466: "2" = "2" passed
+2023-12-19 14:06:26,843 [9] INFO  - Checkpoint 467: "Audi" = "Audi" passed
+2023-12-19 14:06:26,846 [9] INFO  - Checkpoint 468: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,851 [9] INFO  - Checkpoint 469: "1" = "1" passed
+2023-12-19 14:06:26,854 [9] INFO  - Checkpoint 470: "Convertible" = "Convertible" passed
+2023-12-19 14:06:26,857 [9] INFO  - Checkpoint 472: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,860 [9] INFO  - Checkpoint 473: "13" = "13" passed
+2023-12-19 14:06:26,863 [9] INFO  - Checkpoint 474: "Base" = "Base" passed
+2023-12-19 14:06:26,865 [9] INFO  - Checkpoint 475: "Black" = "Black" passed
+2023-12-19 14:06:26,868 [9] INFO  - Checkpoint 476: "3.0L" = "3.0L" passed
+2023-12-19 14:06:26,871 [9] INFO  - Checkpoint 477: "inventory23.jpg" = "inventory23.jpg" passed
+2023-12-19 14:06:26,873 [9] INFO  - Checkpoint 478: "cars/interior23.jpg" = "cars/interior23.jpg" passed
+2023-12-19 14:06:26,876 [9] INFO  - Checkpoint 479: "3" = "3" passed
+2023-12-19 14:06:26,879 [9] INFO  - Checkpoint 480: "58900" = "58900" passed
+2023-12-19 14:06:26,881 [9] INFO  - Checkpoint 481: "2011" = "2011" passed
+2023-12-19 14:06:26,884 [9] INFO  - Checkpoint 482: "23" = "23" passed
+2023-12-19 14:06:26,887 [9] INFO  - Checkpoint 483: "Leather, Navigation" = "Leather, Navigation" passed
+2023-12-19 14:06:26,890 [9] INFO  - Checkpoint 484: "2" = "2" passed
+2023-12-19 14:06:26,892 [9] INFO  - Checkpoint 485: "12295" = "12295" passed
+2023-12-19 14:06:26,895 [9] INFO  - Checkpoint 486: "ASN90856" = "ASN90856" passed
+2023-12-19 14:06:26,901 [9] INFO  - Checkpoint 487: "Auto" = "Auto" passed
+2023-12-19 14:06:26,904 [9] INFO  - Checkpoint 488: "1XCBP8AM1D5256909" = "1XCBP8AM1D5256909" passed
+2023-12-19 14:06:26,906 [9] INFO  - Checkpoint 489: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:26,909 [9] INFO  - Checkpoint 490: "6" = "6" passed
+2023-12-19 14:06:26,912 [9] INFO  - Checkpoint 491: "570 Lane St" = "570 Lane St" passed
+2023-12-19 14:06:26,915 [9] INFO  - Checkpoint 492: "Englewood" = "Englewood" passed
+2023-12-19 14:06:26,917 [9] INFO  - Checkpoint 493: "Terrys VW" = "Terrys VW" passed
+2023-12-19 14:06:26,920 [9] INFO  - Checkpoint 494: "CO" = "CO" passed
+2023-12-19 14:06:26,923 [9] INFO  - Checkpoint 495: "303- 560-3412" = "303- 560-3412" passed
+2023-12-19 14:06:26,926 [9] INFO  - Checkpoint 496: "www.terry_vag.com" = "www.terry_vag.com" passed
+2023-12-19 14:06:26,928 [9] INFO  - Checkpoint 497: "80205" = "80205" passed
+2023-12-19 14:06:26,931 [9] INFO  - Checkpoint 498: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:26,934 [9] INFO  - Checkpoint 499: "23" = "23" passed
+2023-12-19 14:06:26,937 [9] INFO  - Checkpoint 500: "Gas" = "Gas" passed
+2023-12-19 14:06:26,940 [9] INFO  - Checkpoint 501: "1990" = "1990" passed
+2023-12-19 14:06:26,943 [9] INFO  - Checkpoint 502: "3-Series-S" = "3-Series-S" passed
+2023-12-19 14:06:26,946 [9] INFO  - Checkpoint 503: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,949 [9] INFO  - Checkpoint 504: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:26,951 [9] INFO  - Checkpoint 505: "3" = "3" passed
+2023-12-19 14:06:26,958 [9] INFO  - Checkpoint 506: "BMW" = "BMW" passed
+2023-12-19 14:06:26,961 [9] INFO  - Checkpoint 507: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:26,963 [9] INFO  - Checkpoint 508: "7" = "7" passed
+2023-12-19 14:06:26,966 [9] INFO  - Checkpoint 509: "Sedan" = "Sedan" passed
+2023-12-19 14:06:26,970 [9] INFO  - Checkpoint 511: "com.ca.lisa.demo.CarInventory" = "com.ca.lisa.demo.CarInventory" passed
+2023-12-19 14:06:26,973 [9] INFO  - Checkpoint 512: "14" = "14" passed
+2023-12-19 14:06:26,975 [9] INFO  - Checkpoint 513: "Base" = "Base" passed
+2023-12-19 14:06:26,978 [9] INFO  - Checkpoint 514: "Black" = "Black" passed
+2023-12-19 14:06:26,981 [9] INFO  - Checkpoint 515: "3.5L" = "3.5L" passed
+2023-12-19 14:06:26,983 [9] INFO  - Checkpoint 516: "inventory24.jpg" = "inventory24.jpg" passed
+2023-12-19 14:06:26,986 [9] INFO  - Checkpoint 517: "cars/interior24.jpg" = "cars/interior24.jpg" passed
+2023-12-19 14:06:26,989 [9] INFO  - Checkpoint 518: "3" = "3" passed
+2023-12-19 14:06:26,991 [9] INFO  - Checkpoint 519: "68900" = "68900" passed
+2023-12-19 14:06:26,994 [9] INFO  - Checkpoint 520: "2009" = "2009" passed
+2023-12-19 14:06:26,999 [9] INFO  - Checkpoint 521: "26" = "26" passed
+2023-12-19 14:06:27,002 [9] INFO  - Checkpoint 522: "Leather, Navigation" = "Leather, Navigation" passed
+2023-12-19 14:06:27,005 [9] INFO  - Checkpoint 523: "1" = "1" passed
+2023-12-19 14:06:27,008 [9] INFO  - Checkpoint 524: "35295" = "35295" passed
+2023-12-19 14:06:27,011 [9] INFO  - Checkpoint 525: "ASN70851" = "ASN70851" passed
+2023-12-19 14:06:27,013 [9] INFO  - Checkpoint 526: "Auto" = "Auto" passed
+2023-12-19 14:06:27,016 [9] INFO  - Checkpoint 527: "7XCBP8AM1D5256910" = "7XCBP8AM1D5256910" passed
+2023-12-19 14:06:27,019 [9] INFO  - Checkpoint 528: "com.ca.lisa.demo.CarDealer" = "com.ca.lisa.demo.CarDealer" passed
+2023-12-19 14:06:27,022 [9] INFO  - Checkpoint 529: "6" = "6" passed
+2023-12-19 14:06:27,024 [9] INFO  - Checkpoint 530: "570 Lane St" = "570 Lane St" passed
+2023-12-19 14:06:27,027 [9] INFO  - Checkpoint 531: "Englewood" = "Englewood" passed
+2023-12-19 14:06:27,030 [9] INFO  - Checkpoint 532: "Terrys VW" = "Terrys VW" passed
+2023-12-19 14:06:27,032 [9] INFO  - Checkpoint 533: "CO" = "CO" passed
+2023-12-19 14:06:27,035 [9] INFO  - Checkpoint 534: "303- 560-3412" = "303- 560-3412" passed
+2023-12-19 14:06:27,038 [9] INFO  - Checkpoint 535: "www.terry_vag.com" = "www.terry_vag.com" passed
+2023-12-19 14:06:27,041 [9] INFO  - Checkpoint 536: "80205" = "80205" passed
+2023-12-19 14:06:27,047 [9] INFO  - Checkpoint 537: "com.ca.lisa.demo.CarModel" = "com.ca.lisa.demo.CarModel" passed
+2023-12-19 14:06:27,050 [9] INFO  - Checkpoint 538: "26" = "26" passed
+2023-12-19 14:06:27,052 [9] INFO  - Checkpoint 539: "Gas" = "Gas" passed
+2023-12-19 14:06:27,055 [9] INFO  - Checkpoint 540: "1990" = "1990" passed
+2023-12-19 14:06:27,058 [9] INFO  - Checkpoint 541: "5-Series-S" = "5-Series-S" passed
+2023-12-19 14:06:27,061 [9] INFO  - Checkpoint 542: "Sedan" = "Sedan" passed
+2023-12-19 14:06:27,063 [9] INFO  - Checkpoint 543: "com.ca.lisa.demo.CarMake" = "com.ca.lisa.demo.CarMake" passed
+2023-12-19 14:06:27,066 [9] INFO  - Checkpoint 544: "3" = "3" passed
+2023-12-19 14:06:27,069 [9] INFO  - Checkpoint 545: "BMW" = "BMW" passed
+2023-12-19 14:06:27,072 [9] INFO  - Checkpoint 546: "com.ca.lisa.demo.CarType" = "com.ca.lisa.demo.CarType" passed
+2023-12-19 14:06:27,075 [9] INFO  - Checkpoint 547: "7" = "7" passed
+2023-12-19 14:06:27,077 [9] INFO  - Checkpoint 548: "Sedan" = "Sedan" passed
+2023-12-19 14:06:27,090 [9] INFO  - Step 'HTTP Request4' ended successfully
+2023-12-19 14:06:27,092 [9] INFO  - Step 'Loop7' : Step 'Loop7' started
+2023-12-19 14:06:27,096 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-12-19 14:06:27,098 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,104 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,107 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 1,
+  "carTrim": "Premium Plus",
+  "color": "Silver",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 2,
+    "address": "3800 Motor City Dr",
+    "city": "Denver",
+    "name": "Mountain Motors Inc",
+    "state": "CO",
+    "telephone": "303-222-8766",
+    "website": "www.mmdenver.com",
+    "zip": "80202"
+  },
+  "engine": "2.7 V6",
+  "image1": "inventory1.jpg",
+  "image2": "cars/interior1.jpg",
+  "makeid": 2,
+  "milage": 138560,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 10,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 2,
+      "name": "Audi"
+    },
+    "modelYear": 1996,
+    "name": "A4-B",
+    "subName": "Base",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2011,
+  "modelid": 10,
+  "options": "Leather, Navigation, Rear Air",
+  "owners": 6,
+  "price": 3995.0,
+  "stockNumber": "NAD8989",
+  "transmission": "Auto",
+  "vin": "2T1KR32E37C639014"
+}'
+2023-12-19 14:06:27,111 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,113 [9] INFO  - Step 'Iteration 1' ended successfully
+2023-12-19 14:06:27,115 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2023-12-19 14:06:27,117 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,121 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,122 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 2,
+  "carTrim": "Technology",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 2,
+    "address": "3800 Motor City Dr",
+    "city": "Denver",
+    "name": "Mountain Motors Inc",
+    "state": "CO",
+    "telephone": "303-222-8766",
+    "website": "www.mmdenver.com",
+    "zip": "80202"
+  },
+  "engine": "3.2 V6",
+  "image1": "inventory2.jpg",
+  "image2": "cars/interior2.jpg",
+  "makeid": 1,
+  "milage": 30650,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 2,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 1,
+      "name": "Acura"
+    },
+    "modelYear": 2013,
+    "name": "RLX-AWD",
+    "subName": "AWD",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2013,
+  "modelid": 2,
+  "options": "Leather, Navigation, Ski/BikeRack",
+  "owners": 2,
+  "price": 30995.0,
+  "stockNumber": "RA2356/1",
+  "transmission": "Auto",
+  "vin": "1ZVBP8AM1D5256900"
+}'
+2023-12-19 14:06:27,125 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,127 [9] INFO  - Step 'Iteration 2' ended successfully
+2023-12-19 14:06:27,128 [9] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2023-12-19 14:06:27,131 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,134 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,135 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 3,
+  "carTrim": "Premium",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 4,
+    "address": "1673 Blake Rd",
+    "city": "Aurora",
+    "name": "Aurora Acura",
+    "state": "CO",
+    "telephone": "303-955-0134",
+    "website": "www.aurora_acura.com",
+    "zip": "80203"
+  },
+  "engine": "3.5 V6",
+  "image1": "inventory3.jpg",
+  "image2": "cars/interior3.jpg",
+  "makeid": 1,
+  "milage": 54650,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 2,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 1,
+      "name": "Acura"
+    },
+    "modelYear": 2013,
+    "name": "RLX-AWD",
+    "subName": "AWD",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2012,
+  "modelid": 2,
+  "options": "Leather, Navigation, Backup Camera",
+  "owners": 2,
+  "price": 30995.0,
+  "stockNumber": "BN12560",
+  "transmission": "Auto",
+  "vin": "3N1CB51D35l458771"
+}'
+2023-12-19 14:06:27,138 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,141 [9] INFO  - Step 'Iteration 3' ended successfully
+2023-12-19 14:06:27,143 [9] INFO  - Step 'Iteration 4' : Step 'Iteration 4' started
+2023-12-19 14:06:27,145 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,148 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,149 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 4,
+  "carTrim": "Sport",
+  "color": "Silver",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 4,
+    "address": "1673 Blake Rd",
+    "city": "Aurora",
+    "name": "Aurora Acura",
+    "state": "CO",
+    "telephone": "303-955-0134",
+    "website": "www.aurora_acura.com",
+    "zip": "80203"
+  },
+  "engine": "3.5 V6",
+  "image1": "inventory4.jpg",
+  "image2": "cars/interior4.jpg",
+  "makeid": 1,
+  "milage": 78400,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 2,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 1,
+      "name": "Acura"
+    },
+    "modelYear": 2013,
+    "name": "RLX-AWD",
+    "subName": "AWD",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2010,
+  "modelid": 2,
+  "options": "Ski Rack, Tow kit",
+  "owners": 4,
+  "price": 21405.0,
+  "stockNumber": "BN13456",
+  "transmission": "Auto",
+  "vin": "2T1KR32E37C639012"
+}'
+2023-12-19 14:06:27,152 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,154 [9] INFO  - Step 'Iteration 4' ended successfully
+2023-12-19 14:06:27,156 [9] INFO  - Step 'Iteration 5' : Step 'Iteration 5' started
+2023-12-19 14:06:27,161 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,164 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,166 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 5,
+  "carTrim": "Sport",
+  "color": "Red",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 4,
+    "address": "1673 Blake Rd",
+    "city": "Aurora",
+    "name": "Aurora Acura",
+    "state": "CO",
+    "telephone": "303-955-0134",
+    "website": "www.aurora_acura.com",
+    "zip": "80203"
+  },
+  "engine": "1.8T",
+  "image1": "inventory5.jpg",
+  "image2": "cars/interior5.jpg",
+  "makeid": 2,
+  "milage": 98145,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 11,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 2,
+      "name": "Audi"
+    },
+    "modelYear": 1996,
+    "name": "S4-S",
+    "subName": "Sport",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2008,
+  "modelid": 11,
+  "options": "Leather, Dual Air, 6 Speed",
+  "owners": 4,
+  "price": 7800.0,
+  "stockNumber": "BN13467",
+  "transmission": "Manual",
+  "vin": "3N1CB51D35l458773"
+}'
+2023-12-19 14:06:27,168 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,171 [9] INFO  - Step 'Iteration 5' ended successfully
+2023-12-19 14:06:27,172 [9] INFO  - Step 'Iteration 6' : Step 'Iteration 6' started
+2023-12-19 14:06:27,175 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,183 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,185 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 6,
+  "carTrim": "xDrivePlus",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 5,
+    "address": "126 Rte 76",
+    "city": "Fort Collins",
+    "name": "Hilton Honda",
+    "state": "CO",
+    "telephone": "303-123-6789",
+    "website": "www.hiltonhonda.com",
+    "zip": "80503"
+  },
+  "engine": "3.5L",
+  "image1": "inventory6.jpg",
+  "image2": "cars/interior6.jpg",
+  "makeid": 3,
+  "milage": 75350,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 27,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 3,
+      "name": "BMW"
+    },
+    "modelYear": 1990,
+    "name": "7-Series-P",
+    "subName": "Premium",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2010,
+  "modelid": 27,
+  "options": "Leather, Navigation, Rear Air",
+  "owners": 1,
+  "price": 34500.0,
+  "stockNumber": "N2367J6",
+  "transmission": "Auto",
+  "vin": "3N1CB51D35l458774"
+}'
+2023-12-19 14:06:27,188 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,190 [9] INFO  - Step 'Iteration 6' ended successfully
+2023-12-19 14:06:27,192 [9] INFO  - Step 'Iteration 7' : Step 'Iteration 7' started
+2023-12-19 14:06:27,194 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,197 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,199 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 7,
+  "carTrim": "Base",
+  "color": "Blue",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 6,
+    "address": "570 Lane St",
+    "city": "Englewood",
+    "name": "Terrys VW",
+    "state": "CO",
+    "telephone": "303- 560-3412",
+    "website": "www.terry_vag.com",
+    "zip": "80205"
+  },
+  "engine": "2.0T",
+  "image1": "inventory7.jpg",
+  "image2": "cars/interior7.jpg",
+  "makeid": 2,
+  "milage": 104300,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 10,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 2,
+      "name": "Audi"
+    },
+    "modelYear": 1996,
+    "name": "A4-B",
+    "subName": "Base",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2008,
+  "modelid": 10,
+  "options": "Premium Audio Upgrade",
+  "owners": 1,
+  "price": 10750.0,
+  "stockNumber": "ASN29001",
+  "transmission": "Auto",
+  "vin": "2T1KR32E37C639015"
+}'
+2023-12-19 14:06:27,202 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,204 [9] INFO  - Step 'Iteration 7' ended successfully
+2023-12-19 14:06:27,206 [9] INFO  - Step 'Iteration 8' : Step 'Iteration 8' started
+2023-12-19 14:06:27,208 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,211 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,213 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 8,
+  "carTrim": "Premium",
+  "color": "Silver",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 6,
+    "address": "570 Lane St",
+    "city": "Englewood",
+    "name": "Terrys VW",
+    "state": "CO",
+    "telephone": "303- 560-3412",
+    "website": "www.terry_vag.com",
+    "zip": "80205"
+  },
+  "engine": "2.0T",
+  "image1": "inventory8.jpg",
+  "image2": "cars/interior8.jpg",
+  "makeid": 2,
+  "milage": 62000,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 10,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 2,
+      "name": "Audi"
+    },
+    "modelYear": 1996,
+    "name": "A4-B",
+    "subName": "Base",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2012,
+  "modelid": 10,
+  "options": "Leather, Navigation, Bluetooth",
+  "owners": 3,
+  "price": 20400.0,
+  "stockNumber": "ASN34501",
+  "transmission": "Auto",
+  "vin": "1ZVBP8AM1D5256906"
+}'
+2023-12-19 14:06:27,216 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,218 [9] INFO  - Step 'Iteration 8' ended successfully
+2023-12-19 14:06:27,220 [9] INFO  - Step 'Iteration 9' : Step 'Iteration 9' started
+2023-12-19 14:06:27,222 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,225 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,227 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 9,
+  "carTrim": "Base",
+  "color": "Silver",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 6,
+    "address": "570 Lane St",
+    "city": "Englewood",
+    "name": "Terrys VW",
+    "state": "CO",
+    "telephone": "303- 560-3412",
+    "website": "www.terry_vag.com",
+    "zip": "80205"
+  },
+  "engine": "3.0L",
+  "image1": "inventory9.jpg",
+  "image2": "cars/interior9.jpg",
+  "makeid": 3,
+  "milage": 58900,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 27,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 3,
+      "name": "BMW"
+    },
+    "modelYear": 1990,
+    "name": "7-Series-P",
+    "subName": "Premium",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2009,
+  "modelid": 27,
+  "options": "Leather, Navigation, Rear Air",
+  "owners": 2,
+  "price": 32295.0,
+  "stockNumber": "ASN90845",
+  "transmission": "Auto",
+  "vin": "1ZVBP8AM1D5256907"
+}'
+2023-12-19 14:06:27,229 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,232 [9] INFO  - Step 'Iteration 9' ended successfully
+2023-12-19 14:06:27,233 [9] INFO  - Step 'Iteration 10' : Step 'Iteration 10' started
+2023-12-19 14:06:27,236 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,239 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,241 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 10,
+  "carTrim": "Technology Plus",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 5,
+    "address": "126 Rte 76",
+    "city": "Fort Collins",
+    "name": "Hilton Honda",
+    "state": "CO",
+    "telephone": "303-123-6789",
+    "website": "www.hiltonhonda.com",
+    "zip": "80503"
+  },
+  "engine": "3.5 V6",
+  "image1": "inventory10.jpg",
+  "image2": "cars/interior10.jpg",
+  "makeid": 1,
+  "milage": 54650,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 1,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 1,
+      "name": "Acura"
+    },
+    "modelYear": 2013,
+    "name": "RLX-B",
+    "subName": "Base",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2012,
+  "modelid": 1,
+  "options": "Leather, Navigation, Backup Camera",
+  "owners": 2,
+  "price": 30995.0,
+  "stockNumber": "245980A",
+  "transmission": "Auto",
+  "vin": "3N1CB51D35l458778"
+}'
+2023-12-19 14:06:27,243 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,246 [9] INFO  - Step 'Iteration 10' ended successfully
+2023-12-19 14:06:27,248 [9] INFO  - Step 'Iteration 11' : Step 'Iteration 11' started
+2023-12-19 14:06:27,250 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,253 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,255 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 11,
+  "carTrim": "Technology Plus",
+  "color": "Green",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 5,
+    "address": "126 Rte 76",
+    "city": "Fort Collins",
+    "name": "Hilton Honda",
+    "state": "CO",
+    "telephone": "303-123-6789",
+    "website": "www.hiltonhonda.com",
+    "zip": "80503"
+  },
+  "engine": "3.5 V8",
+  "image1": "inventory11.jpg",
+  "image2": "cars/interior11.jpg",
+  "makeid": 1,
+  "milage": 74850,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 1,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 1,
+      "name": "Acura"
+    },
+    "modelYear": 2013,
+    "name": "RLX-B",
+    "subName": "Base",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2011,
+  "modelid": 1,
+  "options": "Leather, Navigation",
+  "owners": 1,
+  "price": 20995.0,
+  "stockNumber": "245180A",
+  "transmission": "Auto",
+  "vin": "3N1CB41D32l458778"
+}'
+2023-12-19 14:06:27,257 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,260 [9] INFO  - Step 'Iteration 11' ended successfully
+2023-12-19 14:06:27,262 [9] INFO  - Step 'Iteration 12' : Step 'Iteration 12' started
+2023-12-19 14:06:27,264 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,267 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,269 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 12,
+  "carTrim": "Luxury",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 5,
+    "address": "126 Rte 76",
+    "city": "Fort Collins",
+    "name": "Hilton Honda",
+    "state": "CO",
+    "telephone": "303-123-6789",
+    "website": "www.hiltonhonda.com",
+    "zip": "80503"
+  },
+  "engine": "3.0 V6",
+  "image1": "inventory22.jpg",
+  "image2": "cars/interior21.jpg",
+  "makeid": 2,
+  "milage": 24650,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 12,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 2,
+      "name": "Audi"
+    },
+    "modelYear": 1996,
+    "name": "A4-C",
+    "subName": "Convertible",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 1,
+      "name": "Convertible"
+    }
+  },
+  "modelYear": 2012,
+  "modelid": 12,
+  "options": "Leather",
+  "owners": 2,
+  "price": 11995.0,
+  "stockNumber": "246987A",
+  "transmission": "Auto",
+  "vin": "3H1CB51D35l453773"
+}'
+2023-12-19 14:06:27,271 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,273 [9] INFO  - Step 'Iteration 12' ended successfully
+2023-12-19 14:06:27,275 [9] INFO  - Step 'Iteration 13' : Step 'Iteration 13' started
+2023-12-19 14:06:27,279 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,284 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,286 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 13,
+  "carTrim": "Base",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 6,
+    "address": "570 Lane St",
+    "city": "Englewood",
+    "name": "Terrys VW",
+    "state": "CO",
+    "telephone": "303- 560-3412",
+    "website": "www.terry_vag.com",
+    "zip": "80205"
+  },
+  "engine": "3.0L",
+  "image1": "inventory23.jpg",
+  "image2": "cars/interior23.jpg",
+  "makeid": 3,
+  "milage": 58900,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 23,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 3,
+      "name": "BMW"
+    },
+    "modelYear": 1990,
+    "name": "3-Series-S",
+    "subName": "Sedan",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2011,
+  "modelid": 23,
+  "options": "Leather, Navigation",
+  "owners": 2,
+  "price": 12295.0,
+  "stockNumber": "ASN90856",
+  "transmission": "Auto",
+  "vin": "1XCBP8AM1D5256909"
+}'
+2023-12-19 14:06:27,288 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,291 [9] INFO  - Step 'Iteration 13' ended successfully
+2023-12-19 14:06:27,293 [9] INFO  - Step 'Iteration 14' : Step 'Iteration 14' started
+2023-12-19 14:06:27,295 [9] INFO  - Step 'Set OS Environment Variable5' : Step 'Set OS Environment Variable5' started
+2023-12-19 14:06:27,298 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable name', Value: 'Carros'
+2023-12-19 14:06:27,300 [9] INFO  - Step 'Set OS Environment Variable5' : Input Parameter 'Variable value', Value: '{
+  "class": "com.ca.lisa.demo.CarInventory",
+  "id": 14,
+  "carTrim": "Base",
+  "color": "Black",
+  "dealer": {
+    "class": "com.ca.lisa.demo.CarDealer",
+    "id": 6,
+    "address": "570 Lane St",
+    "city": "Englewood",
+    "name": "Terrys VW",
+    "state": "CO",
+    "telephone": "303- 560-3412",
+    "website": "www.terry_vag.com",
+    "zip": "80205"
+  },
+  "engine": "3.5L",
+  "image1": "inventory24.jpg",
+  "image2": "cars/interior24.jpg",
+  "makeid": 3,
+  "milage": 68900,
+  "model": {
+    "class": "com.ca.lisa.demo.CarModel",
+    "id": 26,
+    "fuelType": "Gas",
+    "make": {
+      "class": "com.ca.lisa.demo.CarMake",
+      "id": 3,
+      "name": "BMW"
+    },
+    "modelYear": 1990,
+    "name": "5-Series-S",
+    "subName": "Sedan",
+    "type": {
+      "class": "com.ca.lisa.demo.CarType",
+      "id": 7,
+      "name": "Sedan"
+    }
+  },
+  "modelYear": 2009,
+  "modelid": 26,
+  "options": "Leather, Navigation",
+  "owners": 1,
+  "price": 35295.0,
+  "stockNumber": "ASN70851",
+  "transmission": "Auto",
+  "vin": "7XCBP8AM1D5256910"
+}'
+2023-12-19 14:06:27,302 [9] INFO  - Step 'Set OS Environment Variable5' ended successfully
+2023-12-19 14:06:27,304 [9] INFO  - Step 'Iteration 14' ended successfully
+2023-12-19 14:06:27,306 [9] INFO  - Step 'Loop7' ended successfully
+2023-12-19 14:06:27,309 [9] INFO  - Step 'Iteration 1' ended successfully
+2023-12-19 14:06:27,312 [9] INFO  - Step 'Test Flow' ended successfully
+2023-12-19 14:06:27,314 [9] INFO  - Step 'End' : Step 'End' started
+2023-12-19 14:06:27,326 [9] INFO  - Step 'End' ended successfully
